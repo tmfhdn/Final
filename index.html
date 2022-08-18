@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+    <style>
+        /* *{display: inline-block;} */
+        /* * li ol ul {} */
+        body {
+            font-size: 1.6rem;
+            line-height: 1.2;
+            background: #1d1d1d;
+            display: table-row-group;
+            min-width: 320px;
+            font-family: "Open Sans",sans-serif;
+            color: #fff;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        #item {
+            width: 100%;
+            height: 5000px;
+            background-color: red;
+            display: flex;
+        }
+
+        .item1-meun-1 {
+            height: 100vh;
+            background-color: #1d1d1d;
+            position: fixed;
+            left: 0;
+        }
+
+        .item1-meun-1 a {
+            text-align: center;
+            width: 100%;
+            display: block;
+            font-size: 1.6rem;
+            color: #909096;
+            line-height: 5rem;
+            border-bottom: 1px solid #181818;
+            -webkit-transition: color 0.3s, background-color 0.3s;
+            -o-transition: color 0.3s, background-color 0.3s;
+            transition: color 0.3s, background-color 0.3s;
+            font-size: 17px;
+        }
+        .item1-meun-1 ul{
+            position: absolute;
+            font-synthesis-small-caps: auto;
+            display: contents;
+        }
+        .item1-meun-1 li{
+            padding: 0px 0px 0px 0px;
+            position: unset;
+            margin: -21px 0px 0px 0px;
+            font-weight: 400;
+            display: contents;
+        }
+        .item1-meun-1 a{     
+            position: relative;
+            margin: 11px 0px 0px 0px;
+            text-align: center;
+            font-size: 20px;
+            border-bottom-style: double;
+            text-decoration: none;
+        }
+        .item1-meun-2 {
+            background: #000000;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        padding: 0%;
+        }
+
+        .item1-menu-3 li {}
+
+        .item1-menu-4 {}
+
+        .item1-menu-5{    
+            content: '<html>';
+            font-family: 'La Belle Aurore',cursive;
+            color: #515152;
+            font-size: 1rem;
+            position: absolute;
+            margin: -6% 0 0 10%;
+        }
+
+
+        /* ---------item1-meun 메뉴 ------------- */
+        #item1-meun{display: flex; padding: 0 0 0 0;}
+        .item1-1{    
+            height: 100vh;
+            width: 1765px;
+            overflow: hidden;
+            -webkit-box-align: center;
+            background-color: #1e1c1f;
+            justify-content: center;
+            align-items: center;
+            display: inline-table;
+            position: absolute;
+            right: 0;
+            
+        }
+
+        .item1-1 span{
+            padding: 0 0 0 0;
+            font-size: 12px;
+        }
+
+        .item1-2{
+            font-size: 45px;
+            text-align: -webkit-match-parent;
+            padding: 14% 16% 0 60px;
+        }
+        .item1-2 div{    
+            color: #fff;
+            margin: 0;
+            font-family: font-file-82132;
+            font-weight: 400;
+            font-size: 10.3rem;
+            line-height: 8.7rem;
+            position: relative;
+        }
+        .item1-2{color:#fff;}
+
+        .item1-2 h1{ margin: 0;}
+        .item1-p1{    
+            font-size: 1rem;
+            letter-spacing: 4px;
+            display: block;
+            padding: 15px 0 0 64px;
+            color: #8d8d8d;
+        }
+        .item1-img1{    
+            -webkit-animation: animation2 1000ms linear both;
+            animation: animation2 1000ms linear both;
+            opacity: 1 !important;
+        }
+        .item1-img2{
+            padding: 22px 0px 10px 0px;
+            
+        }
+        .item1-meun-2 h2{ 
+            padding: 0px 0 0 0;
+            font-family: font-file-82132;
+            color: #fff;
+            font-size: 25px;
+            margin-top: -2px;
+        }
+        .item1-meun-2 p{
+            font-family: 'Open Sans';
+            color: #a5a5a5;
+            font-size: 0.9rem;
+            margin-top: -5px;
+            padding: 0px 0px 0 0px;
+        }
+
+        .item1-a1{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        .item1-button1{    
+            line-height: 39px;
+            padding: 0;
+        }
+
+        .item1-span1{
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        
+
+        .item1-3{
+            width: 130px;
+            height: 40px;
+            padding: 10px 25px;
+            border: 2px solid #000;
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+        }
+
+        .item1-button1 {
+            width: 220px;
+            height: 55px;
+            padding: 0px 34px;
+            border: 3px solid #0efffd;
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            margin: 31px 0 0 60px;
+            font-size: large;
+        }
+
+        .item1-icons1{display: flex;}
+
+        .item1-icons1 li {
+            display: table-cell;
+            padding: 0 0 0 10px;
+        }
+
+        .item1-1cons1 img{text-decoration-line: none;}
+
+        .item1-text{
+
+            color: #515152;
+            position: absolute;
+            bottom: 0;
+            left: 4rem;
+            font-style: italic;
+            font-size: 1.8rem;
+            font-family: 'La Belle Aurore',cursive;
+        }
+        .item1-span-1{
+            bottom: auto;
+            top: 2rem;
+        }
+        .item1-span-2{
+            bottom: auto;
+            top: 2rem;
+            margin: 19px 0 0 69px;
+        }
+        .item1-span-3{
+            bottom: auto;
+            top: 2rem;
+            margin: 205px 0 0 69px;
+        }
+
+        .item1-span-4{
+            bottom: auto;
+            top: 2rem;
+            margin: 25% 0 0 36%;
+        }
+
+        .item1-span-5{
+            bottom: auto;
+            top: 2rem;
+            margin: 31% 0 0 -2%;
+        }
+        .item1-span-6{
+            bottom: auto;
+            top: 2rem;
+            margin: 35% 0 0 20%;
+        }
+
+
+        .item1-span-7{
+            position: absolute;
+            right: 10px;
+            -webkit-writing-mode: vertical-lr;
+            bottom: 2rem;
+            display: flex;
+            color: #fff;
+        }
+        .item1-span-8{
+            position: absolute;
+            right: 10px;
+            -webkit-writing-mode: vertical-lr;
+            margin: 11% 98% 0 0px;
+            display: flex;
+            color: #fff;
+        }
+
+        .btn-3 span {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .button-item1 {
+            color: #0efffd;
+            z-index: 1;
+            border: double;
+        }
+        .button-item1:hover {
+            color: #000;
+        }
+        .item_span1{
+            color: #515152;
+            position: absolute;
+            bottom: 0;
+            left: 4rem;
+            font-style: italic;
+            font-size: 1.8rem;
+            font-family: 'La Belle Aurore',cursive;
+        }
+        /* --------------item2---------------- */
+        #item2{
+            width: 1780px;
+            position: absolute;
+            display: revert;
+            padding: 55% 0 0 11%;
+        }
+        .item2-h2{
+            font-family: font-file-82132;
+            color: #08fdd8;
+            font-weight: 400;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 39px;
+            left: -10px;
+            font-size: 4.3rem;
+            line-height: 6.7rem;
+            -webkit-text-stroke-width: medium;
+            
+        }
+        .item2-p1{
+            font-size:15px;
+        }
+        .item2-a1{
+            color: #08fdd8;
+            -webkit-transition: color 0.3s;
+            -o-transition: color 0.3s;
+            transition: color 0.3s;
+            text-decoration: none;
+        }
+        .item2-span-1{
+            bottom: auto;
+            top: 2rem;
+            margin: 52% 0 0 5.8%;
+            font-size: 15px;
+        }
+        .item2-span-2{
+            bottom: auto;
+            top: 2rem;
+            margin: 59% 0 0 13%;
+            font-size: 15px;
+        }
+        .item2-span-3{
+            bottom: auto;
+            top: 2rem;
+            margin: 59.5% 0 0 5.8%;
+            font-size: 15px;
+        }
+        .item2-span-4{
+            bottom: auto;
+            top: 2rem;
+            margin: 65% 0 0 7%;
+            font-size: 15px;
+        }
+
+        .item2-span-5{
+            bottom: auto;
+            top: 2rem;
+            margin: 77.5% 0 0 5.8%;
+            font-size: 15px;
+        }
+        .item2-span-6{
+            bottom: auto;
+            top: 2rem;
+            margin: 111% 0 0 7%;
+            font-size: 15px;
+        }
+        .item2-button1 {
+            width: 220px;
+            height: 55px;
+            padding: 0px 34px;
+            border: 3px solid #0efffd;
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            margin: 31px 0 0 60px;
+            font-size: large;
+        }
+
+        .button-item2 {
+            color: #0efffd;
+            z-index: 1;
+            margin-block: unset;
+            border: double;
+        }
+        .button-item2:hover {
+            color: #000;
+        }
+        .item2-button2{    
+            display: table;
+            top: 0;
+            padding: 0% 0px 0 77%;
+            margin-top: -7%;
+        }
+
+        .item2-1{
+            -webkit-writing-mode: horizontal-tb;
+            text-align: start;
+            margin: -18% 0 0 0;
+            font-size: 38vh;
+            color: rgba(255,255,255,0.04);
+            position: absolute;
+            padding: 0px 0 0 38%;
+            font-weight: bolder;
+        }
+
+        #item3{
+            width: 354.59px;
+            height: 354.59px;
+            background-color: hotpink;
+            display: flex;
+            top: auto;
+            position: absolute;
+            
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="item">
+        <div id="item1-meun">
+            <div class="item1-meun-1">
+                <div class="item1-meun-2">
+                    <img class="item1-img2" src="img/item1.png" height="40%" alt="">
+                    <h2>JoInJe</h2>
+                    <p>Portfolio</p>
+                </div>
+                <span class="item1-menu-5 item_span1"><html></span>
+                <ul id="item1-menu-3">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">My Skills</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                
+                <ul class="item1-icons1">
+                    <li><a href="#"><img src="img/icons1.png" height="30" alt=""></a></li>
+                    <li><a href="#"><img src="img/icons2.png" height="30" alt=""></a></li>
+                    <li><a href="#"><img src="img/icons3.png" height="30" alt=""></a></li>
+                </ul>
+                <!-- <span>scroll down</span> -->
+            </div>
+            <div class="item1-1">
+                <span class="item1-text item1-span-1">
+                    〈 html 〉 <br>
+                </span>
+                <span class="item1-text item1-span-2">
+                    〈 /html 〉 <br>
+                </span>
+                <div class="item1-2"><h1>Hi,<br>i'm <img class="item1-img1" src="img/item1.png" width="3.7%" alt="#">ack,<br> Web developer</h1></div>
+                <p class="item1-p1">Front End Developer / WordPress Expert </p>
+
+                <span class="item1-text item1-span-3">
+                    〈 h1 〉 <br>
+                </span>
+                <span class="item1-text item1-span-4">
+                    〈 /h1 〉 <br>
+                </span>
+                <span class="item1-text item1-span-5">
+                    〈 p 〉 <br>
+                </span>
+                <span class="item1-text item1-span-6">
+                    〈 /p 〉 <br>
+                </span>
+
+                <div class="item1-span-7">
+                    <span>scroll down <img src="img/icons4.png" height="28" alt=""></span>
+                </div>
+                <div class="item1-span-8">
+                    <span>scroll down <img src="img/icons4.png" height="28" alt=""></span>
+                </div>
+
+                <button class="item1-button1 button-item1">Read More</button>
+            </div>
+            
+        </div>
+
+
+        <div id="item2">
+            
+            <h1 class="item2-h2">My Portfolio</h1>
+            <p class="item2-p1">A small gallery of recent projects chosen by me. I've done them all together with amazing people from <br> companies around the globe. It's only a drop in the ocean compared to the entire list. <br>
+                Interested to see some more? Visit <a  href="#" class="item2-a1">my work</a> page.</p>
+
+                <div class="item2-1">Work</div>
+
+                <div class="item2-button2">
+                    <button class="item2-button1 button-item2">See More!</button>
+                </div>
+        </div>
+
+        <span class="item1-text item2-span-1">
+            〈 h2 〉 <br>
+        </span>
+        <span class="item1-text item2-span-2">
+            〈 /h2 〉 <br>
+        </span>
+        <span class="item1-text item2-span-3">
+            〈 p 〉 <br>
+        </span>
+        <span class="item1-text item2-span-4">
+            〈 /p 〉 <br>
+        </span>
+
+        <section>
+            <span class="item1-text item2-span-5">
+                〈 section 〉 <br>
+            </span>
+            <span class="item1-text item2-span-6">
+                〈 /section 〉 <br>
+            </span>
+        </section>
+
+
+        <div id="item3">
+            <div class="item3-1"></div>
+            <div class="item3-1"></div>
+            <div class="item3-1"></div>
+            <div class="item3-1"></div>
+        </div>
+
+
+
+    </div>
+
+    
+</body>
+
+</html>
