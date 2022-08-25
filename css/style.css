@@ -209,3 +209,287 @@ body {
 .pic1{
   margin: 0 0 0 0
 }
+/* -------버튼------ */
+body:after {
+  content: "";
+  opacity: 0.7;
+  width: 100%;
+  min-height: 100vh;
+  background: #303033 url("http://subtlepatterns.com/patterns/broken_noise.png");
+  position: absolute;
+  z-index: 1;
+}
+.button-group {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-width: 120px;
+  height: 44px;
+  background-color: #000;
+  border-radius: 2px;
+  padding: 1px;
+}
+
+.button-group > div {
+  cursor: pointer;
+  width: 39px;
+  height: 40px;
+  background-image: linear-gradient(to top, #242424 0%, #303030 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+  transition: 0.2s;
+  box-shadow: inset 0 20px 4px -21px rgb(255 255 255 / 40%), 0 19px 13px 0 rgb(0 0 0 / 30%);
+  color: #181818;
+  position: relative;
+  z-index: 2;
+}
+.button-group > div:before {
+  content: "";
+  display: block;
+  width: 0.8em;
+  height: 0.8em;
+  transition: 0.1s;
+  background-image: radial-gradient(circle 30px at center, #ebf7ff 0%, #b3e1ff 47%, #b3e1ff 100%);
+  position: absolute;
+  filter: blur(15px);
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.button-group > div:after {
+  content: "";
+  display: block;
+  height: 70px;
+  width: 1px;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.2s;
+  filter: blur(0px);
+  box-shadow: -75px 0 0px 0px rgba(179,225,255,0.3), 74px 0 0px 0px rgba(179,225,255,0.35);
+}
+.button-group > div svg {
+  height: 54%;
+  width: 2em;
+  position: relative;
+  display: block;
+  fill: #181818;
+  filter: drop-shadow(0 1px 1px rgba(255,255,255,0.15)) url("#inset-shadow");
+}
+.button-group > div.active {
+  background-image: linear-gradient(to top, #151515 0%, #1d1d1d 100%);
+  box-shadow: inset 0 16px 14px -21px transparent, 0 0px 13px 0 rgba(0,0,0,0.3), inset 0 0 7px 2px rgba(0,0,0,0.4);
+  z-index: 0;
+}
+.button-group > div.active:before {
+  width: 1em;
+  height: 1em;
+  opacity: 0.8;
+}
+.button-group > div.active:after {
+  opacity: 0;
+}
+.button-group > div.active svg {
+  fill: url("#active");
+  filter: drop-shadow(0 1px 1px rgba(255,255,255,0));
+}
+.button-group div:first-of-type {
+  border-radius: 4px 0 0 4px;
+}
+.button-group div:first-of-type:after {
+  box-shadow: -85px 0 18px 1px transparent, 83px 0 12px 1px #b3e1ff;
+}
+.button-group div:last-of-type {
+  border-radius: 0 4px 4px 0;
+}
+.button-group div:last-of-type:after {
+  box-shadow: -85px 0 18px 1px #b3e1ff, 83px 0 12px 1px transparent;
+}
+.svg-filters {
+  height: 0;
+  width: 0;
+}
+
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+.cols {
+  width: 100%;
+  clear: both;
+}
+
+.cols .tile {
+  height: 100%;
+  float: left;
+  overflow: hidden;
+}
+
+.cols.two .tile {
+  width: 50%;
+}
+
+
+.cols.three .tile {
+  width: 33%;
+}
+
+.cols.three .tile:last-of-type {
+  width: 34%;
+}
+
+
+.cols.four .tile {
+  width: 25%;
+}
+
+.rows {
+    height: 100%;
+    width: 100%;
+}
+
+.rows.two .cols {
+  height: 50%;
+}
+
+
+.rows.three .cols {
+  height: 33%;
+}
+
+.rows.three .cols:last-of-type {
+  height: 34%;
+}
+
+.rows.four .cols {
+  height: 25%;
+}
+
+.cols .tile {
+  opacity: 0.4;
+  background-size: cover;
+}
+
+.rows {
+  background: #1d1d1d;
+}
+
+.cols .tile.schmancy {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.cols .tile.schmancy.pic0 {
+  background-image: url("http://pipsum.com/850x600.jpg");
+}
+
+.cols .tile.schmancy.pic1 {
+  background-image: url("http://pipsum.com/800x600.jpg");
+}
+
+.cols .tile.schmancy.pic2 {
+  background-image: url("http://pipsum.com/800x650.jpg");
+}
+
+.cols .tile.schmancy.pic3 {
+  background-image: url("http://pipsum.com/800x550.jpg");
+}
+
+
+
+
+.tile .content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  margin-left: -25%;
+}
+
+.tile {
+  font-family: Helvetica;
+  color: white;
+  align: center;
+}
+
+.cols .tile {
+  transition: 1s;
+}
+
+.cols .tile:hover {
+  opacity: 1;
+  font-size: 3em;
+}
+
+.cols.two:hover .tile {
+  width: 20%;
+}
+
+.cols.two:hover .tile:hover {
+  width: 80%;
+}
+
+.cols.three:hover .tile {
+  width: 20%;
+}
+
+.cols.three:hover .tile:hover {
+  width: 60%;
+}
+
+.cols.four:hover .tile {
+  width: 20%;
+}
+
+.cols.four:hover .tile:hover {
+  width: 40%;
+}
+
+.rows .cols {
+  transition: 1s;
+}
+
+.rows.two:hover .cols {
+  height: 20%;
+}
+
+.rows.two:hover .cols:hover {
+  height: 80%;
+}
+
+.rows.three:hover .cols {
+  height: 20%;
+}
+
+.rows.three:hover .cols:hover {
+  height: 60%;
+}
+
+.rows.four:hover .cols {
+  height: 20%;
+}
+
+.rows.four:hover .cols:hover {
+  height: 40%;
+}
+
+.content img{     
+  padding: 0px 0 0 0;
+  margin: -28px 0 0 0;
+}
+.pic1{
+  margin: 0 0 0 0
+}

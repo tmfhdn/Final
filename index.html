@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <style>
         /* *{display: inline-block;} */
-        /* * li ol ul {} */
+        * li ol ul {display:flex;}
         body {
             font-size: 1.6rem;
             line-height: 1.2;
@@ -107,8 +107,8 @@
         }
 
         .item1-1 {
-            height: 100vh;
-            width: 1765px;
+            height: 100%;
+            width: 93.5%;
             overflow: hidden;
             -webkit-box-align: center;
             background-color: #1e1c1f;
@@ -498,7 +498,7 @@
         .item3-span-2 {
             bottom: auto;
             top: 2rem;
-            margin: 129% 0 0 10%;
+            margin: 132% 0 0 14%;
             font-size: 15px;
         }
 
@@ -644,7 +644,7 @@
             text-decoration: none;
         }
 
-        .item3-8 {
+        .item3-8{
             width: 734px;
             justify-content: center;
             height: 600px;
@@ -653,7 +653,7 @@
             position: absolute;
             display: flex;
             background-color: slateblue;
-        }
+    }
 
         .item4 {
             position: absolute;
@@ -779,172 +779,171 @@
             〈 /p 〉 <br>
         </span>
 
+        <section>
+            <span class="item1-text item2-span-5">
+                〈 section 〉 <br>
+            </span>
+            <span class="item1-text item2-span-6">
+                〈 /section 〉 <br>
+            </span>
 
-        <span class="item1-text item2-span-5">
-            〈 section 〉 <br>
-        </span>
-        <span class="item1-text item2-span-6">
-            〈 /section 〉 <br>
-        </span>
+            <div id="item3">
+                <ul class="item3-ul">
+                    <li class="item3-li">
+                        <div class="item3-2">
+                            <div class="item3-1"><img src="img/item3-1.jpg" height="100%" width="100%" alt=""></div>
+                            <a href="#"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item3-1"><img src="img/item3-2.png" height="100%" width="100%" alt=""></div>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div class="item3-1"><img src="img/item3-3.jpg" height="100%" width="100%" alt=""></div>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <div class="item3-1"><img src="img/item3-4.png" height="80%" width="100%" alt=""></div>
+                        <a href=""></a>
+                    </li>
+                </ul>
 
-        <div id="item3">
-            <ul class="item3-ul">
-                <li class="item3-li">
-                    <div class="item3-2">
-                        <div class="item3-1"><img src="img/item3-1.jpg" height="100%" width="100%" alt=""></div>
-                        <a href="#"></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="item3-1"><img src="img/item3-2.png" height="100%" width="100%" alt=""></div>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <div class="item3-1"><img src="img/item3-3.jpg" height="100%" width="100%" alt=""></div>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <div class="item3-1"><img src="img/item3-4.png" height="80%" width="100%" alt=""></div>
-                    <a href=""></a>
-                </li>
-            </ul>
+                <div class="item3-4"></div>
 
-            <div class="item3-4"></div>
-
-            <div class="item3-8">
-                <div class="three rows" id="first-page">
-                    <div class="three cols">
-                        <div class="schmancy tile pic0">
+                <div class="item3-8">
+                    <div class="three rows" id="first-page">
+                        <div class="three cols">
+                          <div class="schmancy tile pic0">
                             <div class="content"><img src="img/HTML5.png" height="90" alt=""></div>
-                        </div>
-                        <div class="schmancy tile pic3">
+                          </div>
+                          <div class="schmancy tile pic3">
                             <div class="content"><img src="img/css3.png" height="90" alt=""></div>
-                        </div>
-                        <div class="schmancy tile pic1">
+                          </div>
+                          <div class="schmancy tile pic1">
                             <div class="content"><img src="img/javascript.png" height="90" alt=""></div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="four cols">
-                        <div class="schmancy tile pic2">
-                            <div class="content"> PHP </div>
-                        </div>
-                        <div class="schmancy tile pic1">
-                            <div class="content"> Gulp </div>
-                        </div>
-                        <div class="schmancy tile pic2">
-                            <div class="content"> SQl </div>
-                        </div>
-                        <div class="schmancy tile pic1">
+                        <div class="four cols">
+                          <div class="schmancy tile pic2">
+                            <div class="content"><img src="img/NPM.png" height="85" alt=""></div>
+                          </div>
+                          <div class="schmancy tile pic1">
+                            <div class="content"><img src="img/Gulp.png" height="85" alt=""></div>
+                          </div>
+                          <div class="schmancy tile pic2">
+                            <div class="content"><img src="img/SQL.png" height="70" alt=""></div>
+                          </div>
+                          <div class="schmancy tile pic1">
                             <div class="content"><img src="img/JSON.png" height="85" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="three cols">
-                        <div class="schmancy tile pic0">
+                          </div>
+                        </div> 
+                        <div class="three cols">
+                          <div class="schmancy tile pic0">
                             <div class="content"><img src="img/php.png" height="90" alt=""></div>
-                        </div>
-                        <div class="schmancy tile pic3">
+                          </div>
+                          <div class="schmancy tile pic3">
                             <div class="content"><img src="img/jquery.png" height="90" alt=""></div>
-                        </div>
-                        <div class="schmancy tile pic1">
-                            <div class="content">SASS</div>
+                          </div>
+                          <div class="schmancy tile pic1">
+                            <div class="content"><img src="img/SASS.png" height="85" alt=""></div>
+                          </div>
                         </div>
                     </div>
+                      
                 </div>
 
+                <span class="item1-text item3-span-1">
+                    〈 h2 〉 <br>
+                </span>
+                <h2 class="item3-h2">Me, Myself and l</h2>
+                <span class="item1-text item3-span-2">
+                    〈 /h2 〉 <br>
+                </span>
+
+
+                <span class="item1-text item3-span-3">
+                    〈 p 〉 <br>
+                </span>
+
+                <p class="item3-p1">Since Adobe Flash was a complete innovation, alongside with CSS 1.0 and HTML 4.01
+                    <br> as standards of the current web I've been passionate about web. <br>
+                    <br>
+                    For over a decade I had many opportunities to work in a vast spectrum of<a class="item3-a1"
+                        href="#">web<br> technologies</a> what let me gather a significant amount of various experience.
+                    Working<br>for companies and individuals around the globe I met and learnt from amazing and<br>
+                    ambitious people.
+                </p>
+
+                <div class="item3-5"></div>
+
+
+                <span class="item1-text item3-span-4">
+                    〈 /p 〉 <br>
+                </span>
+
+                <p class="item3-p2">I currently work remotely with a selected freelance client base being open for new
+                    <br> opportunities.</p>
+
+                <div class="itme3-span-5">
+                    <span>scroll down <img src="img/icons4.png" height="28" alt=""></span>
+                </div>
+                <div class="item3-span-6">
+                    <span>scroll down <img src="img/icons4.png" height="28" alt=""></span>
+                </div>
+
+                <canvas>
+                    <ul>
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>ES5/ES6</li>
+                        <li>TypeScrlpt</li>
+                        <li>PHP</li>
+                        <li>Gulp</li>
+                        <li>GSAP</li>
+                        <li>JSON</li>
+                        <li>REST</li>
+                        <li>jQuery</li>
+                        <li>Data Science</li>
+                        <li>Wordpress</li>
+                        <li>Python</li>
+                        <li>SASS</li>
+                        <li>npm</li>
+                        <li>React JS</li>
+                        <li>Gulp</li>
+                        <li>GSAP</li>
+                        <li>_lodash</li>
+                        <li>SQl</li>
+                        <li></li>
+                    </ul>
+                </canvas>
+
+
+                <div class="item3-3">Blog</div>
+                <div class="item3-3-1"></div>
+
+                <div class="item3-6"></div>
+                <div class="item3-6"></div>
+                <div class="item3-6"></div>
+                <div class="item3-6"></div>
+                <div class="item3-6"></div>
+                <div class="item3-6"></div>
+                <div class="item3-6"></div>
+                <div class="item3-6"></div>
+                <div class="item3-6"></div>
+
+
+                <div class="item3-7"></div>
+                <h2 class="item3-7-h2"> See all articles.... </h2>
             </div>
 
-            <span class="item1-text item3-span-1">
-                〈 h2 〉 <br>
-            </span>
-            <h2 class="item3-h2">Me, Myself and l</h2>
-            <span class="item1-text item3-span-2">
-                〈 /h2 〉 <br>
-            </span>
-
-
-            <span class="item1-text item3-span-3">
-                〈 p 〉 <br>
-            </span>
-
-            <p class="item3-p1">Since Adobe Flash was a complete innovation, alongside with CSS 1.0 and HTML 4.01
-                <br> as standards of the current web I've been passionate about web. <br>
-                <br>
-                For over a decade I had many opportunities to work in a vast spectrum of<a class="item3-a1"
-                    href="#">web<br> technologies</a> what let me gather a significant amount of various experience.
-                Working<br>for companies and individuals around the globe I met and learnt from amazing and<br>
-                ambitious people.
-            </p>
-
-            <div class="item3-5"></div>
-
-
-            <span class="item1-text item3-span-4">
-                〈 /p 〉 <br>
-            </span>
-
-            <p class="item3-p2">I currently work remotely with a selected freelance client base being open for new
-                <br> opportunities.
-            </p>
-
-            <div class="itme3-span-5">
-                <span>scroll down <img src="img/icons4.png" height="28" alt=""></span>
-            </div>
-            <div class="item3-span-6">
-                <span>scroll down <img src="img/icons4.png" height="28" alt=""></span>
+            <div class="item4-1">
+                <h2 class="item4-h2">Contact me</h2>
+                <p class="item4-p">I’m interested in freelance opportunities – especially ambitious or large projects.
+                    However, if you have<br> other request or question, don’t hesitate to use the form.</p>
             </div>
 
-            <canvas>
-                <ul>
-                    <li>Html</li>
-                    <li>Css</li>
-                    <li>ES5/ES6</li>
-                    <li>TypeScrlpt</li>
-                    <li>PHP</li>
-                    <li>Gulp</li>
-                    <li>GSAP</li>
-                    <li>JSON</li>
-                    <li>REST</li>
-                    <li>jQuery</li>
-                    <li>Data Science</li>
-                    <li>Wordpress</li>
-                    <li>Python</li>
-                    <li>SASS</li>
-                    <li>npm</li>
-                    <li>React JS</li>
-                    <li>Gulp</li>
-                    <li>GSAP</li>
-                    <li>_lodash</li>
-                    <li>SQl</li>
-                    <li></li>
-                </ul>
-            </canvas>
-
-
-            <div class="item3-3">Blog</div>
-            <div class="item3-3-1"></div>
-
-            <div class="item3-6"></div>
-            <div class="item3-6"></div>
-            <div class="item3-6"></div>
-            <div class="item3-6"></div>
-            <div class="item3-6"></div>
-            <div class="item3-6"></div>
-            <div class="item3-6"></div>
-            <div class="item3-6"></div>
-            <div class="item3-6"></div>
-
-
-            <div class="item3-7"></div>
-            <h2 class="item3-7-h2"> See all articles.... </h2>
-        </div>
-
-        <div class="item4-1">
-            <h2 class="item4-h2">Contact me</h2>
-            <p class="item4-p">I’m interested in freelance opportunities – especially ambitious or large projects.
-                However, if you have<br> other request or question, don’t hesitate to use the form.</p>
-        </div>
-
-
+        </section>
 
         <!-- <div class="item4">
 
