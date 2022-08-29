@@ -213,7 +213,7 @@ body {
 body:after {
   content: "";
   opacity: 0.7;
-  width: 100%;
+  /* width: 100%; */
   min-height: 100vh;
   background: #303033 url("http://subtlepatterns.com/patterns/broken_noise.png");
   position: absolute;
