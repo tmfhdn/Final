@@ -1,184 +1,122 @@
-paper.install(window);
-var SQRT_3 = Math.pow(3, 0.5);
-var triangle, D, mousePos, position;
-var count = 50;
+console.clear();
 
-window.onload = function() {
-  paper.setup('item-Mouse');
+const { gsap } = window;
 
-  D = Math.max(paper.view.getSize().width, paper.view.getSize().height);
+gsap.timeline()
+	.set(".menu", { autoAlpha: 1 })
+	.from(".menu__item-innertext", {
+		delay: 1,
+		duration: 0.85,
+		yPercent: 125,
+		stagger: 0.095,
+		skewY: gsap.utils.wrap([-8, 8]),
+		ease: "expo.out",
+	})
+	.set(".menu", { pointerEvents: "all" });
 
-  mousePos = paper.view.center.add([view.bounds.width / 3, 100]);
-  position = paper.view.center;
+gsap.defaults({
+	duration: 0.55,
+	ease: "expo.out",
+});
 
-  // Draw the BG
-  var background = new Path.Rectangle(view.bounds);
-      background.fillColor = '#1e1c1f';
-  buildStars();
-  triangle = new Triangle(50);
+const menuItems = document.querySelectorAll(".menu__item");
 
-  paper.view.draw();
+menuItems.forEach((item) => {
+	const imageWrapper = item.querySelector(".menu__item-image_wrapper");
+	const imageWrapperBounds = imageWrapper.getBoundingClientRect();
+	let itemBounds = item.getBoundingClientRect();
 
-  paper.view.onFrame = function(event) {
-    position = position.add( (mousePos.subtract(position).divide(10) ) );
-    var vector = (view.center.subtract(position)).divide(10);
-    moveStars(vector.multiply(3));
-    triangle.update();
-  };
-};
+	const onMouseEnter = () => {
+		gsap.set(imageWrapper, { scale: 0.8, yPercent: 100, rotation: -15 });
+		gsap.to(imageWrapper, { opacity: 1, scale: 1, yPercent: 0, rotation: 0 });
+	};
+	const onMouseLeave = () => {
+		gsap.to(imageWrapper, { opacity: 0, yPercent: -50, scale: 0.8, rotation: -15 });
+	};
+	const onMouseMove = ({ x, y }) => {
+		let yOffset = itemBounds.top / imageWrapperBounds.height;
+		yOffset = gsap.utils.mapRange(0, 1.5, -150, 150, yOffset);
+		gsap.to(imageWrapper, {
+			duration: 1.25,
+			x: Math.abs(x - itemBounds.left) - imageWrapperBounds.width / 1.55,
+			y: Math.abs(y - itemBounds.top) - imageWrapperBounds.height / 2 - yOffset,
+		});
+	};
 
+	item.addEventListener("mouseenter", onMouseEnter);
+	item.addEventListener("mouseleave", onMouseLeave);
+	item.addEventListener("mousemove", onMouseMove);
 
+	window.addEventListener("resize", () => {
+		itemBounds = item.getBoundingClientRect();
+	});
+});
+// ---------버튼------------------
+$( ".button-group > div" ).click(function() {
+  $('.button-group > div.active').not(this).removeClass('active');
+  $( this ).toggleClass( "active" );
+});
 
-// ---------------------------------------------------
-//  Helpers
-// ---------------------------------------------------
-window.onresize = function() {
-  project.clear();
-  D = Math.max(paper.view.getSize().width, paper.view.getSize().height);
-  // Draw the BG
-  var background = new Path.Rectangle(view.bounds);
-      background.fillColor = '#1e1c1f';
-  buildStars();
-  triangle.build(50);
-};
+console.clear();
+// ----------------따라다니는 오버--------------------------
 
-var random = function(minimum, maximum) {
-  return Math.round(Math.random() * (maximum - minimum) + minimum);
-};
+$(document).ready(function(){
+  
+  var mousePos = {};
 
-var map = function (n, start1, stop1, start2, stop2) {
-  return (n - start1) / (stop1 - start1) * (stop2 - start2) + start2;
-};
-
-
-// ---------------------------------------------------
-//  Triangle
-// ---------------------------------------------------
-var Triangle = function(a) {
-  this.build(a);
-};
-
-Triangle.prototype.build = function(a) {
-  // The points of the triangle
-  var segments = [new paper.Point(0, -a / SQRT_3),
-                  new paper.Point(-a/2, a * 0.5 / SQRT_3),
-                  new paper.Point(a/2, a * 0.5 / SQRT_3)];
-
-  this.flameSize = a / SQRT_3;
-  var flameSegments = [new paper.Point(0, this.flameSize),
-                       new paper.Point(-a/3, a * 0.4 / SQRT_3),
-                       new paper.Point(a/3, a * 0.4 / SQRT_3)];
-
-  this.flame = new Path({
-    segments: flameSegments,
-    closed: true,
-    fillColor: '#FCE589'
+ function getRandomInt(min, max) {
+   return Math.round(Math.random() * (max - min + 1)) + min;
+ }
+  
+  $(window).mousemove(function(e) {
+    mousePos.x = e.pageX;
+    mousePos.y = e.pageY;
   });
-  this.ship = new Path({
-    segments: segments,
-    closed: true,
-    fillColor: '#FF7885'
+  
+  $(window).mouseleave(function(e) {
+    mousePos.x = -1;
+    mousePos.y = -1;
   });
-  this.group = new Group({
-    children: [this.flame, this.ship],
-    position: view.center
-  });
-};
+  // -------------크기------
+  var draw = setInterval(function(){
+    if(mousePos.x > 0 && mousePos.y > 0){
+      
+      var range = 35;
+      
+      var color = "background: rgb("+getRandomInt(0,255)+","+getRandomInt(0,255)+","+getRandomInt(0,255)+");";
+      
+      var sizeInt = getRandomInt(10, 30);
+      size = "height: " + sizeInt + "px; width: " + sizeInt + "px;";
+      
+      var left = "left: " + getRandomInt(mousePos.x-range-sizeInt, mousePos.x+range) + "px;";
+      
+      var top = "top: " + getRandomInt(mousePos.y-range-sizeInt, mousePos.y+range) + "px;"; 
 
-Triangle.prototype.update = function() {
-  this.flame.segments[0].point.x = random(this.flame.segments[1].point.x, this.flame.segments[2].point.x);
+      var style = left+top+color+size;
+      $("<div class='ball' style='" + style + "'></div>").appendTo('#wrap').one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function(){$(this).remove();}); 
+    }
+  }, 1);
+});
 
-  var dist = mousePos.subtract(paper.view.center).length;
-  var angle = mousePos.subtract(paper.view.center).angle;
-  var spread = map(dist, 0, D/2, 10, 30);
+// ---------------------시계-----------------------------------------
+setInterval(clock, 1000);
+function clock() {
+    const date = new Date();
 
-  this.flame.segments[0].point = paper.view.center.subtract(new Point({
-    length: map(dist, 0, D/2, 2*this.flameSize/3, this.flameSize),
-    angle: random(angle - spread, angle + spread)
-  }));
-};
+    const hours = ((date.getHours() + 11) % 12 + 1);
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
 
-Triangle.prototype.rotate = function() {
-  var angle = paper.view.center.subtract(mousePos).angle - paper.view.center.subtract(this.ship.segments[0].point).angle;
+    const hour = hours * 30;
+    const minute = minutes * 6;
+    const second = seconds * 6;
+    document.querySelector(".hr").innerHTML = hours;
+    document.querySelector(".min").innerHTML = minutes;
+    console.log("Hour: " + hours + " Minute: " + minutes + " Second: " + second);
 
-  this.group.rotate(angle, paper.view.center);
-};
+    document.querySelector('#hour').style.transform = `rotate(${hour}deg)`;
+    document.querySelector('#minute').style.transform = `rotate(${minute}deg)`;
+    document.querySelector('#second').style.transform = `rotate(${second}deg)`;
+}
 
-
-
-// ---------------------------------------------------
-//  Stars (from paperjs.org examples section)
-// ---------------------------------------------------
-window.onmousemove = function(event) {
-  mousePos.x = event.x;
-  mousePos.y = event.y;
-  triangle.rotate();
-};
-
-var buildStars = function() {
-  // Create a symbol, which we will use to place instances of later:
-  var path = new Path.Circle({
-    center: [0, 0],
-    radius: 5,
-    fillColor: 'white',
-    strokeColor: 'white'
-  });
-
-  var symbol = new Symbol(path);
-
-  // Place the instances of the symbol:
-  for (var i = 0; i < count; i++) {
-    // The center position is a random point in the view:
-    var center = Point.random().multiply(paper.view.size);
-    var placed = symbol.place(center);
-    placed.scale(i / count + 0.01);
-    placed.data = {
-      vector: new Point({
-        angle: Math.random() * 360,
-        length : (i / count) * Math.random() / 5
-      })
-    };
-  }
-
-  var vector = new Point({
-    angle: 45,
-    length: 0
-  });
-};
-
-var keepInView = function(item) {
-  var position = item.position;
-  var viewBounds = paper.view.bounds;
-  if (position.isInside(viewBounds))
-    return;
-  var itemBounds = item.bounds;
-  if (position.x > viewBounds.width + 5) {
-    position.x = -item.bounds.width;
-  }
-
-  if (position.x < -itemBounds.width - 5) {
-    position.x = viewBounds.width;
-  }
-
-  if (position.y > viewBounds.height + 5) {
-    position.y = -itemBounds.height;
-  }
-
-  if (position.y < -itemBounds.height - 5) {
-    position.y = viewBounds.height
-  }
-};
-
-var moveStars = function(vector) {
-  // Run through the active layer's children list and change
-  // the position of the placed symbols:
-  var layer = project.activeLayer;
-  for (var i = 1; i < count + 1; i++) {
-    var item = layer.children[i];
-    var size = item.bounds.size;
-    var length = vector.length / 10 * size.width / 10;
-    item.position = item.position.add( vector.normalize(length).add(item.data.vector));
-    keepInView(item);
-  }
-};
-
+// ---------------------------------가로 스크롤--------------------------
