@@ -591,3 +591,13 @@ document.addEventListener('scroll', () => {
     progressText.innerHTML = ''
   }
 })
+
+// ------------------------------에널리틱스
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9BXJWLR2BF');
+</script>
