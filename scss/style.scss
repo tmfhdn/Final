@@ -1,177 +1,168 @@
-body {
-  font-family: "Montserrat", sans-serif;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #000;
-                   @media only screen and (max-width: 800px) {
-        justify-content: left;
-                     padding-left:50px;
-  }
+//colors
+$sun:linear-gradient(270deg, #EAC485 0%, #FFFFFF 100%);
+$base-orbit-size:150px;
+$sun-size:120px;
+$left:164px;
+$orbits-bgcolors-list: #40193E #30133F #21103A;
+$orbit-planets-bgcolors-list: linear-gradient(269.7deg, #EBC88D 0.26%, #FFB444 99.74%) linear-gradient(269.7deg, #FA765F 0.26%, #FFB444 99.74%) linear-gradient(269.7deg, #FA765F 0.26%, #FF4644 99.74%);
+$body-bg-color:#120D31;
+$star-color:#BCBCBC;
+$time-color:#120D31;
+//
+$zindex:16;
+$transform-origin:110px;
+$animation-duration:2.4s;
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+body{
+  background:$body-bg-color;
+  height: 100vh;
 }
-* {
-  outline: none;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-}
-
-*,
-:after,
-:before {
-  box-sizing: border-box;
-}
-
-.menu {
-  position: relative;
-  padding: 30px 0;
-  > ol {
-    display: flex;
-  @media only screen and (max-width: 800px) {
-    display: block;
-  }
-    > .menu-item {
-      display: inline-block;
-      position: relative;
-       @media only screen and (max-width: 800px) {
-    display: block;
-  }
-      &:hover {
-        .sub-menu {
-          opacity: 1;
-          li {
-            @for $i from 1 through 3 {
-              &:nth-child(#{$i}) {
-                animation-name: subMenuAnimation;
-                animation-duration: 300ms;
-                animation-delay: (100ms * $i);
-                animation-timing-function: ease-in-out;
-                animation-fill-mode: forwards;
-              }
-            }
-          }
-        }
-      }
-      > a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 2.5vw;
-        font-weight: 700;
-        letter-spacing: 1px;
-        margin: 0 25px;
-        display: block;
-         @media only screen and (max-width: 800px) {
-    margin: 30px 0;
-           font-size:30px;
-  }
-      }
-      .sub-menu {
-        padding: 28px 25px 0;
-        position: absolute;
-        left: 0;
-        opacity: 0;
-                 @media only screen and (max-width: 800px) {
-        left: 100%;
-    top: -32px;
-  }
- 
-        li {
-          opacity: 0;
-          a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1vw;
-            font-weight: 400;
-            letter-spacing: 1px;
-            margin: 12px 0;
-            display: block;
-            white-space: nowrap;
-            text-transform: uppercase;
-            transition: color 0.3s cubic-bezier(0.13, 1.07, 0.84, 1);
-              @media only screen and (max-width: 1080px) {
-    font-size:13px;
-  }
-            &:hover {
-              color: #f34ea4;
-            }
-          }
-        }
-      }
-    }
-  }
-  .menu-shape {
-    position: absolute;
-    left: -62px;
-    top: -55px;
-    z-index: -1;
-      @media only screen and (max-width: 1440px) {
-    left: -32px; 
-  }
-  @media only screen and (max-width: 1180px) {
-    left: -15px; 
-    top: -62px;
-  }
-  @media only screen and (max-width: 800px) {
-    left: -35px; 
-  }
-    svg {
-      position: relative;
-      display: block;
-    width: 10vw;
-    height: 10vh;
-      min-height: 150px;
-      margin: 0 auto;
-        @media only screen and (max-width: 800px) {
-    width: 80px;
-    height: 80px;
-  }
-    }
-  }
-}
-
-@keyframes subMenuAnimation {
-  0% {
-    opacity: 0;
-    transform: translateX(-30px);
-    //filter: blur(5px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-
-.info{
+.container, .sun, .moon, .orbit,.night,.day,.planet,.planet-container,.planet-1,.planet-2,.planet-3,.orbit-planet-1,.orbit-planet-2,.orbit-planet-3,.stars,.stars div{
   position:absolute;
-  left:0;
-  bottom:0;
-  color:#fff;
-  text-align:center;
-  width:100%;
-  padding-bottom:30px;
-  font-size:20px;
-  display:none;
 }
-
-.link {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 20px;
-  z-index: 9999;
-  a {
+.container{
+    margin:auto;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width:530px;
+    height:530px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.orbit{
+    background: transparent;
+    border-radius: 100%;
+    width: $base-orbit-size;
+    height: $base-orbit-size;
+}
+.time{
     display: flex;
     align-items: center;
-    text-decoration: none;
-    color: #fff;
-  }
-  .fa {
-    font-size: 28px;
-    margin-right: 8px;
-    color: #fff;
-  }
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    z-index: 222222;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 32px;
+    line-height: 0.5;
+    color: $time-color;
+}
+.planet{
+    border-radius: 100%;
+    //animation: rotate180degBack cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun{
+    width: $sun-size;
+    height: $sun-size;
+    z-index: $zindex+1;
+    background: $sun;
+    border-radius: 100%;
+    box-shadow: 0px 0px 50px #F2CE92;
+    animation: shineStars 10s infinite;
+
+}
+#hour,
+#minute,
+#second {
+    transform-origin: 270px 270px;
+    transition: transform 1s ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#hour{
+    bottom: 50%;
+}
+#minute{
+    bottom: 76%;
+}
+
+
+@for $i from 1 through 25{
+    $random-size:random(10)+px;
+    .stars div:nth-child(#{$i}){
+        width: $random-size;
+        height: $random-size;
+        border-radius: 100%;
+        background: $star-color;
+        left: (random(1000) - 500) +px;
+        bottom: (random(1000) - 300) +px;
+        z-index: -3;
+        margin: 30px;
+        animation: starsOpacity $i*7.9s infinite;
+    }
+}
+
+@each $current-color in $orbit-planets-bgcolors-list {
+    $i: index($orbit-planets-bgcolors-list, $current-color);
+    .planet-#{$i}{
+        @extend .planet;
+        z-index:$zindex - 6*$i;
+        //transform-origin:$transform-origin+$i*50 100%;
+        //animation-duration: $animation-duration*$i;
+        //right: $left + $i*70px;
+        div{ 
+            @extend .planet;
+            background: $current-color;
+            z-index: $zindex/$i;
+        }
+    }
+}
+@for $i from 1 through 3{
+    .orbit-#{$i}{
+        @extend .orbit;
+        width: $base-orbit-size + $i*130px;
+        height: $base-orbit-size + $i*130px;
+    }    
+}
+
+@for $i from 1 through 3{
+    .planet-#{$i}{
+        $base-orbit-planet-size: $i*9;
+        @for $i from 1 through 3{
+            .orbit-planet-#{$i}{
+                opacity: 1/$i;
+                border-radius: 100%;
+                width: $base-orbit-planet-size + $i*18px;
+                height: $base-orbit-planet-size + $i*18px;
+            }  
+        }
+    }   
+}
+
+@each $current-color in $orbits-bgcolors-list {
+    $i: index($orbits-bgcolors-list, $current-color);
+    .orbit-#{$i} { 
+        @extend .orbit;
+        background: $current-color;
+        z-index: $zindex/$i;
+    }
+}
+.animation{
+    animation: rotate180deg 2s infinite;
+}
+@keyframes rotate180deg{
+    0% { transform:rotate(0deg); }
+    100% { transform:rotate(360deg); }
+}
+@keyframes rotate180degBack{
+    0% { transform:rotate(0deg); }
+    100% { transform:rotate(360deg); }
+}
+@keyframes shineStars{
+    0%{box-shadow: 0px 0px 50px #F2CE92;}
+    50%{box-shadow: 0px 0px 150px #ffffff;}
+}
+@keyframes starsOpacity{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
 }
