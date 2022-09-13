@@ -711,4 +711,10 @@ $(document).ready(function(){
   }, 1);
 });
 
-// ----------우주선 마우스--------------------
+// ----------행성 오버--------------------
+
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);

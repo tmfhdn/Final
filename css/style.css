@@ -82,7 +82,7 @@ body {
 
 .item1-menu-3 li {position: fixed;}
 
-.item1-menu-4 {}
+.item1-menu-4 {margin: 0px 0 0 251%;}
 
 .item1-menu-5 {
   content: '<html>';
@@ -116,7 +116,7 @@ body {
 
 .item1-1 span {
   padding: 0px 0 0 0;
-  top: 0%;
+  top: 3%;
   font-size: 15px;
   left: 3%;
 }
@@ -150,7 +150,7 @@ body {
   font-size: 1rem;
   letter-spacing: 4px;
   display: block;
-  padding: 33% 0 0 64px;
+  padding: 43.3% 0 0 181px;
   color: #8d8d8d;
   position: absolute;
 }
@@ -2365,7 +2365,7 @@ body {
   top:0;
   left:0;
   height:10px;
-  background-color: #a38678;
+  /* background-color: #a38678; */
   z-index: 2;
 }
 
@@ -2397,7 +2397,7 @@ section:first-of-type {
   height: auto;
   padding: 0px 0 0 0;
   position: absolute;
-  margin: 7% 0 0 52%;
+  margin: -11% 0 0 52%;
   background-image: url(../img/q1.png);
 
 }
@@ -2415,7 +2415,7 @@ section:first-of-type {
   height: auto;
   padding: 0px 0 0 0;
   position: absolute;
-  margin: -23% 0 0 4%;
+  margin: -44% 0 0 4%;
   /* background-image: url(../img/q3.png) */
 }
 .item-scroll-3{ 
@@ -2423,14 +2423,14 @@ section:first-of-type {
   height: auto;
   padding: 0px 0 0 0;
   position: absolute;
-  margin: -55% 0 0 74%;
+  margin: -77% 0 0 74%;
 }
 .item-scroll-4{ 
   width: 100vh;
   height: auto;
   padding: 0px 0 0 0;
   position: absolute;
-  margin: -93% 0 0 7%;
+  margin: -110% 0 0 7%;
 }
 
 /* ---------우주선 마우스----------- */
@@ -2448,9 +2448,9 @@ body * {
 
 canvas {
   z-index: 1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  position: inherit;
+width: 100%;
+    height: 100%;
   top: 0;
   left: 0;
   /* background-image: url(img/q.png); */
@@ -2600,16 +2600,163 @@ body {
     top: 12px;
   }
 } */
-/* -------마우스커서 오버----------- */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-/* html, body {
-  height: 100%;
-  margin: 0;
+/* -------행성 오버----------- */
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,500,900);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.snip1446 {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
   position: relative;
-  background: #222;
-  font-family: "Open Sans";
-} */
+  overflow: hidden;
+  margin: 10px;
+  max-width: 500px;
+  height: 500px;
+  border-radius: 70%;
+  overflow: hidden;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+}
+
+#snip1446-1{
+  margin: 0 0 0 0;
+}
+.snip1446 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1446 img {
+  opacity: 1;
+  height: 100%;
+  border-radius: 70%;
+  overflow: hidden;
+  width: 100%;
+}
+.snip1446:after,
+.snip1446:before,
+.snip1446 figcaption:after,
+.snip1446 figcaption:before {
+  background: #0a0a0a;
+  width: 25%;
+  position: absolute;
+  content: '';
+  opacity: 0;
+  -webkit-transition: all 0.3s steps(4);
+  transition: all 0.3s steps(4);
+  z-index: 1;
+  top: 100%;
+  bottom: 0;
+}
+.snip1446:before {
+  left: 0;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+}
+.snip1446:after {
+  left: 25%;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+.snip1446 figcaption:before {
+  left: 50%;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  z-index: -1;
+}
+.snip1446 figcaption:after {
+  left: 75%;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  z-index: -1;
+}
+.snip1446 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 30px;
+}
+.snip1446 h2,
+.snip1446 p,
+.snip1446 .icons {
+  margin: 0;
+  width: 100%;
+  opacity: 0;
+}
+.snip1446 h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.snip1446 p {
+  font-weight: 300;
+}
+.snip1446 .icons {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+}
+.snip1446 i {
+  padding: 0px 10px;
+  display: inline-block;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0.8;
+}
+.snip1446 i:hover {
+  opacity: 1;
+}
+.snip1446:hover:after,
+.snip1446.hover:after,
+.snip1446:hover:before,
+.snip1446.hover:before,
+.snip1446:hover figcaption:after,
+.snip1446.hover figcaption:after,
+.snip1446:hover figcaption:before,
+.snip1446.hover figcaption:before {
+  top: 0;
+  opacity: 0.8;
+}
+.snip1446:hover figcaption h2,
+.snip1446.hover figcaption h2,
+.snip1446:hover figcaption p,
+.snip1446.hover figcaption p,
+.snip1446:hover figcaption .icons,
+.snip1446.hover figcaption .icons {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.snip1446:hover figcaption h2,
+.snip1446.hover figcaption h2,
+.snip1446:hover figcaption .icons,
+.snip1446.hover figcaption .icons {
+  opacity: 1;
+}
+.snip1446:hover figcaption p,
+.snip1446.hover figcaption p {
+  opacity: 0.7;
+}
+
+.item3-png-1{
+  margin: 0 0 0 0;
+}
+
+.item3-png-2{
+  margin: 0 0 0 236%;
+
+}
+
+.item3-png-3{
+  margin: 0 0 0 0;
+}
+.item3-png-4{
+  margin: 0px 0 0 248%;
+}
 
 
 /* --------미디어 쿼리-----1900px----- */
@@ -2627,19 +2774,18 @@ body {
   #item1-menu {
     display: flex;
     padding: 0 0 0 0;
-    position: absolute;
+    position: unset;
   }
 
   .item1-1 {
     height: 100%;
-    width: 80.5%;
+    width: 86.5%;
     overflow: hidden;
     -webkit-box-align: center;
     background-color: #1e1c1f;
     justify-content: center;
     align-items: center;
     display: inline-table;
-    position: absolute;
     right: 0;
   }
   
@@ -2660,7 +2806,7 @@ body {
 
   .item1-2 {
     color: #fff;
-    margin: 48px 0 0 11%;
+    margin: 35px 0 0 0%;
     font-size: 38px;
     position: absolute;
   }
@@ -2669,7 +2815,7 @@ body {
     font-size: 1rem;
     letter-spacing: 4px;
     display: block;
-    padding: 42% 0 0 194px;
+    padding: 47.3% 0 0 7%;
     color: #8d8d8d;
     position: absolute;
   }
@@ -2699,7 +2845,7 @@ body {
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
-    margin: 47% 0 0 17%;
+    margin: 52% 0 0 7%;
     font-size: 16px;
   }
 
