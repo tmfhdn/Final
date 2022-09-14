@@ -11,35 +11,45 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'><link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BXJWLR2BF"></script>
-
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
 
 </head>
 
 
 <body>
+    <button class="menu-btn">
+        <div class="content">
+            <span class="text">메뉴</span>
+            <span class="text">닫기</span>
+        </div>
+    </button>
+
+ 
     <div id="item">
 
         <div id="item1-menu">
 
             <div class="item1-menu-1">
+                
                 <div class="item1-menu-2">
                     <img class="item1-img2" src="img/item1.png" height="40%" alt="">
                     <h2>JoInJe</h2>
                     <p>Portfolio</p>
                 </div>
-                <span class="item1-menu-5 item_span1">
+                <span class="item1-menu-5 item_span1"></span>
 
-                </span>
+
                 <ul id="item1-menu-3">
-                    <li><a href="#">My Story</a></li>
-                    <li><a href="#">My Skills</a></li>
+                    <li><a href="#item3-6">My Story</a></li>
+                    <li><a href="#item3-h2">My Skills</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Blog</a></li>
                 </ul>
-            <!-- ----------버튼--------- -->
+                <!-- ----------버튼--------- -->
                 <ul class="item1-icons1">
                     <div class="button-group">
                         <div>
@@ -82,12 +92,91 @@
                 </ul>
                 <!-- ----------------버튼 끝------------------------ -->
 
-
+                <nav class="nav">
+        
+                    <div class="nav__inner">
+                        <div class="nav--transition-slide">
+                            <div class="item1-menu-2">
+                                <img class="item1-img2" src="img/item1.png" height="40%" alt="">
+                                <h2>JoInJe</h2>
+                                <p>Portfolio</p>
+                            </div>
+                            
+                        </div>
+                        <div class="nav--items">
+                            <div class="nav--item">
+                                <div class="nav--item-link">
+                                    <a href="#item3-6" class="nav--link">
+                                        <span class="nav--link-text" data-text="My Story">My Story</span>
+                                        <div class="nav--link-icon">
+                                            <svg class="icon">
+                                                <use xlink:href="#arrow-right" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="nav--item-line"></div>
+                            </div>
+                            <div class="nav--item">
+                                <div class="nav--item-link">
+                                    <a href="#item3-h2" class="nav--link">
+                                        <span class="nav--link-text" data-text="My Skills">My Skills</span>
+                                        <div class="nav--link-icon">
+                                            <svg class="icon">
+                                                <use xlink:href="#arrow-right" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="nav--item-line"></div>
+                            </div>
+                            <div class="nav--item">
+                                <div class="nav--item-link">
+                                    <a href="#section-fluid-main" class="nav--link">
+                                        <span class="nav--link-text" data-text="Portfolio">Portfolio</span>
+                                        <div class="nav--link-icon">
+                                            <svg class="icon">
+                                                <use xlink:href="#arrow-right" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="nav--item-line"></div>
+                            </div>
+                            <div class="nav--item">
+                                <div class="nav--item-link">
+                                    <a href="#" class="nav--link">
+                                        <span class="nav--link-text" data-text="Contact">Contact</span>
+                                        <div class="nav--link-icon">
+                                            <svg class="icon">
+                                                <use xlink:href="#arrow-right" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="nav--item-line"></div>
+                            </div>
+                            <div class="nav--item">
+                                <div class="nav--item-link">
+                                    <a href="#" class="nav--link">
+                                        <span class="nav--link-text" data-text="Blog">Blog</span>
+                                        <div class="nav--link-icon">
+                                            <svg class="icon">
+                                                <use xlink:href="#arrow-right" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="nav--item-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
 
 
             <div class="item1-1">
-                
+
                 <div id="wrap">
                     <div class="container">
                         <div class="sun"></div>
@@ -140,38 +229,39 @@
                     </div>
                     <!-- ---------시계끝----------- -->
                     <canvas id="item-Mouse" resize="true"></canvas>
-                        <span class="item1-text item1-span-1">
-                            〈 html 〉 <br>
-                        </span>
-                        <span class="item1-text item1-span-2">
-                            〈 /html 〉 <br>
-                        </span>
-                        <div class="item1-2">
-                            <h1>Hi,<br>i'm <img class="item1-img1" src="img/item1.png" width="7.7%" alt="#">oInJe,<br> be a web developer</h1>
-                        </div>
-                        <p class="item1-p1">Front End Developer / WordPress Expert </p>
-                            
-                        <span class="item1-text item1-span-3">
-                            〈 h1 〉 <br>
-                        </span>
-                        <span class="item1-text item1-span-4">
-                            〈 /h1 〉 <br>
-                        </span>
-                        <span class="item1-text item1-span-5">
-                            〈 p 〉 <br>
-                        </span>
-                        <span class="item1-text item1-span-6">
-                            〈 /p 〉 <br>
-                        </span>
-                            
-                        <div class="item1-span-7">
-                            <span>scroll down <img src="img/icons4.png" height="28" alt=""></span>
-                        </div>
-                        <div class="item1-span-8">
-                            <span>scroll down <img src="img/icons4.png" height="28" alt=""></span>
-                        </div>
-                            
-                        <button class="item1-button1 button-item1">Read More</button>
+                    <span class="item1-text item1-span-1">
+                        〈 html 〉 <br>
+                    </span>
+                    <span class="item1-text item1-span-2">
+                        〈 /html 〉 <br>
+                    </span>
+                    <div class="item1-2">
+                        <h1>Hi,<br>i'm <img class="item1-img1" src="img/item1.png" width="7.7%" alt="#">oInJe,<br> be a
+                            web developer</h1>
+                    </div>
+                    <p class="item1-p1">Front End Developer / WordPress Expert </p>
+
+                    <span class="item1-text item1-span-3">
+                        〈 h1 〉 <br>
+                    </span>
+                    <span class="item1-text item1-span-4">
+                        〈 /h1 〉 <br>
+                    </span>
+                    <span class="item1-text item1-span-5">
+                        〈 p 〉 <br>
+                    </span>
+                    <span class="item1-text item1-span-6">
+                        〈 /p 〉 <br>
+                    </span>
+
+                    <div class="item1-span-7">
+                        <span>scroll down <img src="img/icons4.png" height="28" alt=""></span>
+                    </div>
+                    <div class="item1-span-8">
+                        <span>scroll down <img src="img/icons4.png" height="28" alt=""></span>
+                    </div>
+
+                    <button class="item1-button1 button-item1">Read More</button>
                     </canvas>
                 </div>
             </div>
@@ -183,8 +273,9 @@
 
             <h1 class="item2-h2">개발자</h1>
             <p class="item2-p1">처음 배울 때는 코딩이란 게 너무 어렵다 이걸 내가 할 수 있을까? 그런 생각과 함께 두려움도 있었습니다
-                <br>  하지만 저는 더 이상 두려워하지 않습니다. 끊임없이 배울 수 있고 그것을 활용할 수 있다는 것이 재밌습니다<br>
-                아직 미숙한 것이 사실이지만 점차 조금씩 바뀌고 있음을 보여드립니다. 저는 끈기있는 개발자 <a href="#" class="item2-a1">조인제</a>    라고 합니다</p>
+                <br> 하지만 저는 더 이상 두려워하지 않습니다. 끊임없이 배울 수 있고 그것을 활용할 수 있다는 것이 재밌습니다<br>
+                아직 미숙한 것이 사실이지만 점차 조금씩 바뀌고 있음을 보여드립니다. 저는 끈기있는 개발자 <a href="#" class="item2-a1">조인제</a> 라고 합니다
+            </p>
 
             <div class="item2-1">Work</div>
 
@@ -196,17 +287,17 @@
         <div class="item2-2">
             <div class="card">
                 <div class="card-back">
-                  <div class="line-numbers">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
-                    <div>7</div>
-                    <div>8</div>
-                    <div>9</div>
-                  </div><code><span class="variable">a </span><span class="function">b </span><span class="operator">= </span><span>{</span>
+                    <div class="line-numbers">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div><code><span class="variable">a </span><span class="function">b </span><span class="operator">= </span><span>{</span>
                     <div class="indent"> <span class="property">c</span><span class="operator">: </span><span class="string">'d'</span><span>,</span></div>
                     <div class="indent"> <span class="property">e</span><span class="operator">: </span><span class="string">'f'</span><span>,</span></div>
                     <div class="indent"> <span class="property">g</span><span class="operator">: </span><span>{</span>
@@ -215,17 +306,18 @@
                     </div><span>}</span></code>
                 </div>
                 <div class="card-front">
-                  <div class="line-numbers">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
-                    <div>7</div>
-                    <div>8</div>
-                    <div>9</div>
-                  </div><code><span class="variable">a</span><span>.</span><span class="method">b</span><span>(</span><span class="string">'c'</span><span>, </span><span class="function">() => </span><span>{ </span>
+                    <div class="line-numbers">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+                    <code><span class="variable">a</span><span>.</span><span class="method">b</span><span>(</span><span class="string">'c'</span><span>, </span><span class="function">() => </span><span>{ </span>
                     <div class="indent"><span class="variable">d</span><span>.</span><span class="property">e </span><span>= </span><span class="boolean">f</span><span>;</span></div><span>});</span></code>
                 </div>
             </div>
@@ -245,23 +337,23 @@
         </span>
 
 
-            <span class="item1-text item2-span-5">
-                〈 nav 〉 <br>
-            </span>
-            <span class="item1-text item2-span-6">
-                〈 / nav 〉 <br>
-            </span>
+        <span class="item1-text item2-span-5">
+            〈 nav 〉 <br>
+        </span>
+        <span class="item1-text item2-span-6">
+            〈 / nav 〉 <br>
+        </span>
 
-            <div id="item3">
-                <ul class="item3-ul">
-                    <li class="item3-li">
-                        <div class="item3-2">
-                            <!-- 이미지 마우스오버 시작 -->
-                            <div class="item3-1" style="opacity: 1; visibility: inherit; pointer-events: all;">
-                                <div class="section-fluid-main">
-                                    <div class="section-row">
-            
-                                        <!-- <div class="section-col">
+        <div id="item3">
+            <ul class="item3-ul">
+                <li class="item3-li">
+                    <div class="item3-2">
+                        <!-- 이미지 마우스오버 시작 -->
+                        <div class="item3-1" style="opacity: 1; visibility: inherit; pointer-events: all;">
+                            <div id="section-fluid-main">
+                                <div class="section-row">
+
+                                    <!-- <div class="section-col">
                                             <div class="section">
                                                 <div class="section-in">
                                                     <img src="img/A.jpg" alt="">
@@ -282,51 +374,54 @@
                                         <div class="hover-text">
                                             <h2>CSS3</h2>
                                         </div> -->
-                                        <div class="section-col section-col4">
-                                            <div class="section">
-                                                <div class="section-in">
-                                                    <a href="https://tmfhdn.github.io/project1/"><img src="img/t.png" alt=""></a>
-                                                </div>
+                                    <div class="section-col section-col4">
+                                        <div class="section">
+                                            <div class="section-in">
+                                                <a href="https://tmfhdn.github.io/project1/"><img src="img/t.png"
+                                                        alt=""></a>
                                             </div>
                                         </div>
-                                        <div class="hover-text">
-                                            <h2>ThomBrowne</h2>
-                                        </div>
-                                        <div class="section-col section-col3">
-                                            <div class="section">
-                                                <div class="section-in">
-                                                    <a href="#"><img src="img/C.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="hover-text">
-                                            <h2>Casetify</h2>
-                                        </div>
-                                        <div class="section-col section-col2">
-                                            <div class="section">
-                                                <div class="section-in">
-                                                    <a href="https://tmfhdn.github.io/project3/"><img src="img/A.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="hover-text">
-                                            <h2>Apple</h2>
-                                        </div>
-                                        <div class="section-col section-col1">
-                                            <div class="section">
-                                                <div class="section-in">
-                                                    <a href="https://tmfhdn.github.io/project2/"><img src="img/m.jpg"  alt=""></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="hover-text">
-                                            <h2>Marvel</h2>
-                                        </div>
-            
                                     </div>
-                            
+                                    <div class="hover-text">
+                                        <h2>ThomBrowne</h2>
+                                    </div>
+                                    <div class="section-col section-col3">
+                                        <div class="section">
+                                            <div class="section-in">
+                                                <a href="#"><img src="img/C.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hover-text">
+                                        <h2>Casetify</h2>
+                                    </div>
+                                    <div class="section-col section-col2">
+                                        <div class="section">
+                                            <div class="section-in">
+                                                <a href="https://tmfhdn.github.io/project3/"><img src="img/A.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hover-text">
+                                        <h2>Apple</h2>
+                                    </div>
+                                    <div class="section-col section-col1">
+                                        <div class="section">
+                                            <div class="section-in">
+                                                <a href="https://tmfhdn.github.io/project2/"><img src="img/m.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hover-text">
+                                        <h2>Marvel</h2>
+                                    </div>
+
                                 </div>
-                                <!-- <main>
+
+                            </div>
+                            <!-- <main>
                                     <nav class="menu">
                                         <a class="menu__item">
                                             <div class="menu__item-image_wrapper">
@@ -362,17 +457,17 @@
                                         </a>
                                     </nav>
                                 </main> -->
-                            </div>
-                            <!-- 이미지 마우스오버 마무리 -->
                         </div>
-                    </li>
+                        <!-- 이미지 마우스오버 마무리 -->
+                    </div>
+                </li>
 
-                </ul>
-                <script>
-                    
-                </script>
+            </ul>
+            <script>
 
-                <!-- <div class="item3-4">
+            </script>
+
+            <!-- <div class="item3-4">
                     <div class="logo">
                         <div></div>
                         <div></div>
@@ -385,189 +480,222 @@
                     </div>
                 </div> -->
 
-                <div class="item3-8">
-                    <div class="three rows" id="first-page">
-                        <div class="three cols">
-                            <div class="schmancy tile pic0">
-                                <div class="content"><img src="img/HTML5.png" height="90" alt=""></div>
-                            </div>
-                            <div class="schmancy tile pic3">
-                                <div class="content"><img src="img/css3.png" height="90" alt=""></div>
-                            </div>
-                            <div class="schmancy tile pic1">
-                                <div class="content"><img src="img/javascript.png" height="90" alt=""></div>
-                            </div>
+            <div class="item3-8">
+                <div class="three rows" id="first-page">
+                    <div class="three cols">
+                        <div class="schmancy tile pic0">
+                            <div class="content"><img src="img/HTML5.png" height="90" alt=""></div>
                         </div>
-                        <div class="four cols">
-                            <div class="schmancy tile pic2">
-                                <div class="content"><img src="img/React.png" height="85" alt=""></div>
-                            </div>
-                            <div class="schmancy tile pic1">
-                                <div class="content"><img src="img/VUE.png" height="85" alt=""></div>
-                            </div>
-                            <div class="schmancy tile pic2">
-                                <div class="content"><img src="img/SQL.png" height="70" alt=""></div>
-                            </div>
-                            <div class="schmancy tile pic1">
-                                <div class="content"><img src="img/JSON.png" height="85" alt=""></div>
-                            </div>
+                        <div class="schmancy tile pic3">
+                            <div class="content"><img src="img/css3.png" height="90" alt=""></div>
                         </div>
-                        <div class="three cols">
-                            <div class="schmancy tile pic0">
-                                <div class="content"><img src="img/Angular.png" height="90" alt=""></div>
-                            </div>
-                            <div class="schmancy tile pic3">
-                                <div class="content"><img src="img/jquery.png" height="90" alt=""></div>
-                            </div>
-                            <div class="schmancy tile pic1">
-                                <div class="content"><img src="img/SASS.png" height="85" alt=""></div>
-                            </div>
+                        <div class="schmancy tile pic1">
+                            <div class="content"><img src="img/javascript.png" height="90" alt=""></div>
                         </div>
                     </div>
-
-                </div>
-
-                <span class="item1-text item3-span-1">
-                    〈 h2 〉 <br>
-                </span>
-                <h2 class="item3-h2">배우고 도전하는</h2>
-                <span class="item1-text item3-span-2">
-                    〈 /h2 〉 <br>
-                </span>
-
-
-                <span class="item1-text item3-span-3">
-                    〈 p 〉 <br>
-                </span>
-
-                <p class="item3-p1">6개월 가량 전 늘 배우고 활용하여 지내왔습니다.
-                    <br>HTML5/CSS3로 기초를 다짐으로 써 웹 화면을 더욱 더 탄탄하게 하는 법을 배웠고<br>
-                    <br>
-                    웹을 예쁘게 혹은 멋있게 꾸밀수 있는 <a class="item3-a1"
-                        href="#">jQuery/JavaScript<br> </a> 배우고 반응형 디자인에 도전도 해보고 성장할수있는 제 자신을 보고 기뻤습니다.<br>현재 배우고있는 단계 비록 아직은 약하지만
-                        저는 그 단계를 거쳐 더욱 단단해 질것입니다.<br>
-                    
-
-                <div class="item3-5">
-                    <ul>
-                        <div>
-                            <li class="item3-5-text">#Name</li>
-                            <li>Jo In Je</li>
+                    <div class="four cols">
+                        <div class="schmancy tile pic2">
+                            <div class="content"><img src="img/React.png" height="85" alt=""></div>
                         </div>
-                        <img class="item3-5-img" src="img/item3-QR.png" height="100" alt="">
-                        <div>
-                            <li class="item3-5-text">#Profession</li>
-                            <li>: Web Developer</li>
+                        <div class="schmancy tile pic1">
+                            <div class="content"><img src="img/VUE.png" height="85" alt=""></div>
                         </div>
-
-                        <div>
-                            <li class="item3-5-text">#Detaijs</li>
-                            <li>: Phone <span>+82 010 6543 1953</span></li>
-                            <li>: Address <span>인천광역시 중구</span></li>
-                            <li>: Email <span>whdlswp008@naver.com</span></li>
+                        <div class="schmancy tile pic2">
+                            <div class="content"><img src="img/SQL.png" height="70" alt=""></div>
                         </div>
-                    </ul>
+                        <div class="schmancy tile pic1">
+                            <div class="content"><img src="img/JSON.png" height="85" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="three cols">
+                        <div class="schmancy tile pic0">
+                            <div class="content"><img src="img/Angular.png" height="90" alt=""></div>
+                        </div>
+                        <div class="schmancy tile pic3">
+                            <div class="content"><img src="img/jquery.png" height="90" alt=""></div>
+                        </div>
+                        <div class="schmancy tile pic1">
+                            <div class="content"><img src="img/SASS.png" height="85" alt=""></div>
+                        </div>
+                    </div>
                 </div>
 
+            </div>
 
-                <span class="item1-text item3-span-4">
-                    〈 /p 〉 <br>
-                </span>
-
-                <p class="item3-p2">우측에 보이는 프로그램들은 현재 열심히 배우고 있는 프로그램입니다.
-                    <br>
-                </p>
-
-                <div class="itme3-span-5">
-                    <span>scroll down <img src="img/icons4.png" height="28" alt=""></span>
-                </div>
-                <div class="item3-span-6">
-                    <span>scroll down <img src="img/icons4.png" height="28" alt=""></span>
-                </div>
-
-                <canvas>
-                    <ul>
-                        <li>Html</li>
-                        <li>Css</li>
-                        <li>ES5/ES6</li>
-                        <li>TypeScrlpt</li>
-                        <li>PHP</li>
-                        <li>Gulp</li>
-                        <li>GSAP</li>
-                        <li>JSON</li>
-                        <li>REST</li>
-                        <li>jQuery</li>
-                        <li>Data Science</li>
-                        <li>Wordpress</li>
-                        <li>Python</li>
-                        <li>SASS</li>
-                        <li>npm</li>
-                        <li>React JS</li>
-                        <li>Gulp</li>
-                        <li>GSAP</li>
-                        <li>_lodash</li>
-                        <li>SQl</li>
-                        <li></li>
-                    </ul>
-                </canvas>
+            <span class="item1-text item3-span-1">
+                〈 h2 〉 <br>
+            </span>
+            <h2 id="item3-h2">배우고 도전하는</h2>
+            <span class="item1-text item3-span-2">
+                〈 /h2 〉 <br>
+            </span>
 
 
-                <div class="item3-3">Blog</div>
-                <div class="item3-3-1"><iframe
+            <span class="item1-text item3-span-3">
+                〈 p 〉 <br>
+            </span>
+
+            <p class="item3-p1">6개월 가량 전 늘 배우고 활용하여 지내왔습니다.
+                <br>HTML5/CSS3로 기초를 다짐으로 써 웹 화면을 더욱 더 탄탄하게 하는 법을 배웠고<br>
+                <br>
+                웹을 예쁘게 혹은 멋있게 꾸밀수 있는 <a class="item3-a1" href="#">jQuery/JavaScript<br> </a> 배우고 반응형 디자인에 도전도 해보고 성장할수있는
+                제 자신을 보고 기뻤습니다.<br>현재 배우고있는 단계 비록 아직은 약하지만
+                저는 그 단계를 거쳐 더욱 단단해 질것입니다.<br>
+
+
+            <div class="item3-5">
+                <ul>
+                    <div>
+                        <li class="item3-5-text">#Name</li>
+                        <li>Jo In Je</li>
+                    </div>
+                    <img class="item3-5-img" src="img/item3-QR.png" height="100" alt="">
+                    <div>
+                        <li class="item3-5-text">#Profession</li>
+                        <li>: Web Developer</li>
+                    </div>
+
+                    <div>
+                        <li class="item3-5-text">#Detaijs</li>
+                        <li>: Phone <span>+82 010 6543 1953</span></li>
+                        <li>: Address <span>인천광역시 중구</span></li>
+                        <li>: Email <span>whdlswp008@naver.com</span></li>
+                    </div>
+                </ul>
+            </div>
+
+
+            <span class="item1-text item3-span-4">
+                〈 /p 〉 <br>
+            </span>
+
+            <p class="item3-p2">우측에 보이는 프로그램들은 현재 열심히 배우고 있는 프로그램입니다.
+                <br>
+            </p>
+
+            <div class="itme3-span-5">
+                <span>scroll down <img src="img/icons4.png" height="28" alt=""></span>
+            </div>
+            <div class="item3-span-6">
+                <span>scroll down <img src="img/icons4.png" height="28" alt=""></span>
+            </div>
+
+            <canvas>
+                <ul>
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>ES5/ES6</li>
+                    <li>TypeScrlpt</li>
+                    <li>PHP</li>
+                    <li>Gulp</li>
+                    <li>GSAP</li>
+                    <li>JSON</li>
+                    <li>REST</li>
+                    <li>jQuery</li>
+                    <li>Data Science</li>
+                    <li>Wordpress</li>
+                    <li>Python</li>
+                    <li>SASS</li>
+                    <li>npm</li>
+                    <li>React JS</li>
+                    <li>Gulp</li>
+                    <li>GSAP</li>
+                    <li>_lodash</li>
+                    <li>SQl</li>
+                    <li></li>
+                </ul>
+            </canvas>
+
+
+            <div class="item3-3">Blog</div>
+            <div class="item3-3-1"><iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d808157.7602173551!2d126.69088908740753!3d37.70016392696999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35796f2596138247%3A0x7d37fd902cb76142!2z7J247LKc6rSR7Jet7Iuc!5e0!3m2!1sko!2skr!4v1661728715788!5m2!1sko!2skr"
                     width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 
-                    <div class="item3-6">
-                        <div class="progress">
+            <div id="item3-6">
+                <div class="progress">
 
-                            <canvas id="main-canvas"></canvas>
-                            <canvas id="star-canvas"></canvas>
-
-
-
-                            <div id="cursor">
-                                <div class="rocket floating shadow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178.62 203.18"><path d="M1015.59,714.44l171.81-.62a3.4,3.4,0,0,0,2.9-5.16l-86.46-143.28a3.4,3.4,0,0,0-5.84,0l-85.35,143.9A3.4,3.4,0,0,0,1015.59,714.44Z" transform="translate(-1012.17 -531.96)" fill="#b5b4ff"/><path d="M1101.5,563.8V714.13l-85.91.31a3.4,3.4,0,0,1-2.93-5.14L1098,565.4A3.34,3.34,0,0,1,1101.5,563.8Z" transform="translate(-1012.17 -531.96)" fill="#fff"/><ellipse cx="89.15" cy="101.59" rx="48.79" ry="101.59" fill="#fff"/><path d="M1101.5,532c26.95,0,48.79,45.48,48.79,101.59s-21.84,101.59-48.79,101.59V532Z" transform="translate(-1012.17 -531.96)" fill="#d9d9ff"/><path d="M1101.5,532c28.48,0.6,48.61,45.48,48.61,101.59s-17,77.64-19.2,81.07c0,0,2.78-44.72.74-85.46C1127.54,547.08,1101.5,532,1101.5,532Z" transform="translate(-1012.17 -531.96)" fill="#b5b4ff"/><circle cx="1101.5" cy="592.37" r="18.83" transform="translate(-1108.42 420.42) rotate(-45)" fill="#1a0a53" stroke="#fff" stroke-miterlimit="10" stroke-width="5"/><path d="M1106.71,582.26c-2.14.16-4.34,5-3.94,10.41s3.27,9.34,5.41,9.18,4.37-4.92,4-10.33S1108.85,582.1,1106.71,582.26Z" transform="translate(-1012.17 -531.96)" fill="#fff"/></svg></div>
-                            </div>
-                    
-                            <figure class="snip1446 item3-png-1"><img src="img/q1.png" alt="sample71" />
-                                <figcaption>
-                                    
-                                  <h2>도전</h2>
-                                  <p><br>&nbsp;&nbsp;저는 늘 도전하며 살아왔습니다.<br> 어떤 건 힘들더라 어떤 건 어렵더라.<br>
-                                    그런 건 저에게 중요하지 않았습니다 이걸 위해 노력을 했느냐 결과가 있었냐고 물어보신다면 전 Yes라고 말하고 싶습니다<br>
-                                    세상에 쉬운 거 없으며 열심히 하다 보면 좋은 날이 올 거라 생각하며 지내왔고 그게 바로 지금이라 생각합니다.<br> 현재를 위해
-                                    살아왔기 때문에 잘할 수 있습니다.</p>
-                              
-                                </figcaption>
-                            </figure>
-
-                            <figure class="snip1446 item3-png-2"><img src="img/q5.png" alt="sample71" />
-                                <figcaption>
-                                  <h2>2</h2>
-                                  <p>ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ</p>
-                              
-                                </figcaption>
-                            </figure>
-                            
-                            <figure class="snip1446 item3-png-3" ><img src="img/q4.png" alt="sample71" />
-                                <figcaption>
-                                  <h2>3</h2>
-                                  <p>ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ</p>
-                              
-                                </figcaption>
-                            </figure>
+                    <canvas id="main-canvas"></canvas>
+                    <canvas id="star-canvas"></canvas>
 
 
-                            <figure class="snip1446 item3-png-4"><img src="img/q6.png" alt="sample71" />
-                                <figcaption>
-                                <h2>4</h2>
-                                <p>ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ</p>
-                            
-                                </figcaption>
-                            </figure>
-                            
-                            <!-- <section>
+
+                    <div id="cursor">
+                        <div class="rocket floating shadow"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 178.62 203.18">
+                                <path
+                                    d="M1015.59,714.44l171.81-.62a3.4,3.4,0,0,0,2.9-5.16l-86.46-143.28a3.4,3.4,0,0,0-5.84,0l-85.35,143.9A3.4,3.4,0,0,0,1015.59,714.44Z"
+                                    transform="translate(-1012.17 -531.96)" fill="#b5b4ff" />
+                                <path
+                                    d="M1101.5,563.8V714.13l-85.91.31a3.4,3.4,0,0,1-2.93-5.14L1098,565.4A3.34,3.34,0,0,1,1101.5,563.8Z"
+                                    transform="translate(-1012.17 -531.96)" fill="#fff" />
+                                <ellipse cx="89.15" cy="101.59" rx="48.79" ry="101.59" fill="#fff" />
+                                <path d="M1101.5,532c26.95,0,48.79,45.48,48.79,101.59s-21.84,101.59-48.79,101.59V532Z"
+                                    transform="translate(-1012.17 -531.96)" fill="#d9d9ff" />
+                                <path
+                                    d="M1101.5,532c28.48,0.6,48.61,45.48,48.61,101.59s-17,77.64-19.2,81.07c0,0,2.78-44.72.74-85.46C1127.54,547.08,1101.5,532,1101.5,532Z"
+                                    transform="translate(-1012.17 -531.96)" fill="#b5b4ff" />
+                                <circle cx="1101.5" cy="592.37" r="18.83"
+                                    transform="translate(-1108.42 420.42) rotate(-45)" fill="#1a0a53" stroke="#fff"
+                                    stroke-miterlimit="10" stroke-width="5" />
+                                <path
+                                    d="M1106.71,582.26c-2.14.16-4.34,5-3.94,10.41s3.27,9.34,5.41,9.18,4.37-4.92,4-10.33S1108.85,582.1,1106.71,582.26Z"
+                                    transform="translate(-1012.17 -531.96)" fill="#fff" />
+                            </svg></div>
+                    </div>
+
+                    <figure class="snip1446 item3-png-1"><img src="img/q1.png" alt="sample71" />
+                        <figcaption>
+
+                            <h2>도전</h2>
+                            <p><br>&nbsp;&nbsp;저는 늘 도전하며 살아왔습니다.<br> 어떤 건 힘들더라 어떤 건 어렵더라.<br><br>
+                                그런 건 저에게 중요하지 않았습니다 이걸 위해 노력을 했느냐 결과가 있었냐고 물어보신다면 전 Yes라고 말하고 싶습니다<br><br>
+                                세상에 쉬운 거 없으며 열심히 하다 보면 좋은 날이 올 거라 생각하며 지내왔고 그게 바로 지금이라 생각합니다.<br> 현재를 위해
+                                살아왔기 때문에 잘할 수 있습니다.</p>
+
+                        </figcaption>
+                    </figure>
+
+                    <figure class="snip1446 item3-png-2"><img src="img/q5.png" alt="sample71" />
+                        <figcaption>
+                            <h2>활용</h2>
+                            <p><br>&nbsp;&nbsp;<br><br>단순히 복사 붙여넣기만 반복하는 기계가 아닌 생각을 하며<br> 원하는 페이지를 구현할 줄 알아야
+                                합니다<br><br>
+                                물론 전문가 수준으로 할 수 있는 것은 아니지만 기초 단계를 하나하나 밟았으며 모르는 것이 있다면 저는 어떻게든
+                                찾아<br> 제거로 만들고 싶은 욕망이 있기에 늘 배우고 어느것이든<br> 도전하며 활용할수있는<br> 웹퍼블리셔/개발자 가 될 것입니다</p>
+
+                        </figcaption>
+                    </figure>
+
+                    <figure class="snip1446 item3-png-3"><img src="img/q4.png" alt="sample71" />
+                        <figcaption>
+                            <h2>소통</h2>
+                            <p><br>&nbsp;&nbsp;<br>어느 어떤 회사든 팀원끼리의 커뮤니케이션이 중요하다<br> 생각 합니다 .
+                                현재까지는 나의 포트폴리오 저의 발전을 위해 사이트를 만들고 배웠다면<br><br>
+                                이제는 회사발전을 위해 일할 준비가 되었다고 생각 합니다 .<br><br>
+                                물론 저는 제 자신을 잘한다고 생각하지 않습니다. <br>
+                                꾸준히 소통을 통해 제 자신을 발전하며 같이 성장할수 있는 기회가 되었으면 합니다.<br> </p>
+
+                        </figcaption>
+                    </figure>
+
+
+                    <figure class="snip1446 item3-png-4"><img src="img/q6.png" alt="sample71" />
+                        <figcaption>
+                            <h2>목표</h2>
+                            <p><br>&nbsp;&nbsp;<br>사실 저는 계획이라는거에 낯설기도하고 잘 지키지 못합니다 .<br>
+                                작년 저는 제 자신을 크게 발전할수있는 계기가 있었습니다 .<br><br>
+                                제가 좋아하는사람을 계기로 저는 크게 발전 할수 있었다고 <br>생각합니다 .
+                                하지 않던 계획을 도전할수있는 계기도 되었고<br> 그동안 흐뭇 지지 했던 삶이었다면<br>
+                                현재 저는 꿈이 생겼고 삶에 가장중요한 목표가 생겼습니다 .<br>
+                                앞으로 제 삶에 어떤일이 발생할지 어떠한 위기가 찾아올지<br> 아무것도 알수 없지만
+                                확실한건 <>저와 성장 할수있는 회사를 찾는 것 입니다</p>
+
+                        </figcaption>
+                    </figure>
+
+                    <!-- <section>
                     
                             </section>
                             <section></section>
@@ -581,51 +709,55 @@
                                 <img src="img/q3.png" height="500" alt="">
                             </section>
                                         -->
-                    
 
-                    
-                          <!-- <section class="item-scroll"></section> -->
-                    
-                            
-                      
-                    
-                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-                        <link rel="stylesheet" href="css/style.css">
-                        <script  src="js/1.js"></script>
-                        <script  src="js/Mouse.js"></script>
-                    
-                      </div>
+
+
+                    <!-- <section class="item-scroll"></section> -->
+
+
+
+
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+                    <link rel="stylesheet" href="css/style.css">
+                    <script src="js/1.js"></script>
+                    <script src="js/Mouse.js"></script>
 
                 </div>
 
-
-
-                <!-- <div class="item3-7"></div> -->
             </div>
 
-            <!-- <div class="item4-1">
+
+
+            <!-- <div class="item3-7"></div> -->
+        </div>
+
+        <!-- <div class="item4-1">
                 <h2 class="item4-h2">도전</h2>
                 <p class="item4-p">저는 늘 도전하며 살아왔습니다. 어떤 건 힘들더라 어떤 건 어렵더라.<br>
                     그런 건 저에게 중요하지 않았습니다 이걸 위해 노력을 했느냐 결과가 있었냐고 물어보신다면 전 Yes라고 말하고 싶습니다<br>
                     세상에 쉬운 거 없으며 열심히 하다 보면 좋은 날이 올 거라 생각하며 지내왔고 그게 바로 지금이라 생각합니다.<br> 현재를 위해
                     살아왔기 때문에 잘할 수 있습니다.<br>
             </div> -->
- </div>
+    </div>
 
 
-  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script><script  src="js/1.js"></script>
- <script src="js/time.js"></script>
-  <!-- ---에널리틱스---- -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-9BXJWLR2BF');
+    <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+    <script src="js/1.js"></script>
+    <script src="js/time.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js'></script>
+    <script src="js/meun.js"></script>
+    <!-- ---에널리틱스---- -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9BXJWLR2BF');
 
 
-    
-  </script>
+
+    </script>
 
 
     </div>

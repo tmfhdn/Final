@@ -718,3 +718,36 @@ $(".hover").mouseleave(
     $(this).removeClass("hover");
   }
 );
+
+// ---------------------------네모 효과
+
+let customFactor = 2;
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  const wrapper = document.querySelector('.wrapper');
+  const box = document.querySelector('.js-3dbox');
+
+
+  const perspective = "60rem";
+  let factor = customFactor ? customFactor : 10; 
+  
+  init3dEffect(wrapper, box);
+
+  function init3dEffect(elController, elAffected) {
+    elController.addEventListener('mousemove', e => {
+      x = ((elController.offsetWidth / 2) - e.offsetX) / factor;
+      y = ((elController.offsetHeight / 2) - e.offsetY) / -factor;
+
+      elAffected.style.transform =
+        `perspective(${perspective}) rotateY(${x}deg) rotateX(${y}deg) translateZ(0)`;
+    });
+
+    elController.addEventListener('mouseout', () => {
+      elAffected.style.transform = "perspective("+perspective+")";
+    });
+  }
+});
+
+// ----------반응형 메뉴--------------------
+
