@@ -111,17 +111,32 @@ body {
 
 }
 
-.item1-1 span {
-  padding: 0px 0 0 0;
-  top: 3%;
-  font-size: 15px;
-  left: 3%;
+.item1-2 span {
+  transition: all 0.5s;
+    -webkit-text-stroke: 4px #d6f4f4;
+    font-variation-settings: "wght" 900, "ital" 1;
+    font-size: 6rem;
+    text-align: center;
+    color: transparent;
+    font-family: "Meta", sans-serif;
+    text-shadow: 10px 10px 0px #07bccc, 15px 15px 0px #e601c0, 20px 20px 0px #e9019a, 25px 25px 0px #f40468, 45px 45px 10px #482896;
+    cursor: pointer;
+}
+/* span:hover {
+  font-variation-settings: "wght" 100, "ital" 0;
+  text-shadow: none;
+} */
+.item1-1 span:hover {
+  font-variation-settings: "wght" 100, "ital" 0;
+  text-shadow: none;
 }
 
+
+
+
 .item1-2 {
-  font-size: 45px;
-  text-align: -webkit-match-parent;
-  padding: 14% 16% 0 60px;
+font-size: 45px;
+  padding: 12% 16% 0 187px;
 }
 
 .item1-2 div {
@@ -134,22 +149,18 @@ body {
   position: relative;
 }
 
-.item1-2 {
-  color: #fff;
-  position: absolute;
-}
 
 .item1-2 h1 {
   margin: 0;
 }
 
 .item1-p1 {
-  font-size: 1.5rem;
-  letter-spacing: 5px;
-  display: block;
-  padding: 32.3% 0 0 72px;
-  color: #8d8d8d;
-  position: absolute;
+    font-size: 1.5rem;
+      letter-spacing: 5px;
+      display: block;
+      padding: 3.3% 0 0 203px;
+      color: #8d8d8d;
+      position: absolute;
 }
 
 .item1-img1 {
@@ -216,10 +227,15 @@ body {
   position: relative;
   display: inline-block;
 }
+.item1-3 {
+
+
+}
 
 .item1-button1 {
   width: 220px;
   height: 55px;
+  text-decoration: none;
   padding: 0px 34px;
   border: 3px solid #0efffd;
   font-family: 'Lato', sans-serif;
@@ -229,7 +245,7 @@ body {
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  margin: 37% 0 0 60px;
+  margin: 7% 0 0 72px;
   font-size: large;
 }
 
@@ -247,38 +263,37 @@ body {
 }
 
 .item1-text {
-
-  color: #515152;
+color: #515152;
   position: absolute;
-  bottom: 0;
-  left: 4rem;
+  left: 12rem;
   font-style: italic;
-  font-size: 1.8rem;
+  font-size: 1rem;
   font-family: 'La Belle Aurore', cursive;
 }
 
 .item1-span-1 {
   bottom: auto;
-  top: 2rem;
+  top: 7rem;
 }
 
 .item1-span-2 {
   bottom: auto;
-  top: 2rem;
+  top: 8rem;
   margin: 19px 0 0 69px;
 }
 
 .item1-span-3 {
-  bottom: auto;
-  top: 2rem;
-  margin: 205px 0 0 69px;
+    bottom: auto;
+      top: 2rem;
+      margin: 174px 0 0 41px;
 }
 
 .item1-span-4 {
-    bottom: auto;
-      top: 13rem;
-      margin: 10% 0 0 79%;
-      font-size: 15px;
+  bottom: auto;
+  left: 43%;
+  top: 38rem;
+  -webkit-user-modify: read-write-plaintext-only;
+  font-size: 15px;
 }
 
 .item1-span-5 {
@@ -299,8 +314,9 @@ body {
   position: absolute;
   right: 10px;
   -webkit-writing-mode: vertical-lr;
-  bottom: 2rem;
+  bottom: 0rem;
   display: flex;
+  font-size: xx-small;
   color: #fff;
 }
 
@@ -321,9 +337,10 @@ body {
 }
 
 .button-item1 {
-  color: #0efffd;
-  z-index: 1;
-  border: double;
+    color: #0efffd;
+      z-index: 1;
+      margin: 8% 0 0 12%;
+      border: double;
 }
 
 .button-item1:hover {
@@ -346,23 +363,34 @@ body {
   height: 50%;
 }
 
+.item1-4{
+-webkit-writing-mode: horizontal-tb;
+  text-align: start;
+  margin: 110% 0 0 -22%;
+  font-size: 38vh;
+  color: rgba(255, 255, 255, 0.04);
+  position: absolute;
+  padding: 0px 0 0 38%;
+  font-weight: bolder;
+}
+
 /* --------------item2---------------- */
 #item2 {
   width: 1780px;
-  position: absolute;
+  position: inherit;
   display: revert;
   left: 8%;
-  padding: 55% 0 0 11%;
+  padding: 30.9% 0 0 8%;
 }
 
 .item2-h2 {
-  font-family: font-file-82132;
+font-family: font-file-82132;
   color: #08fdd8;
   font-weight: 400;
-  margin-top: 0;
+  margin-top: -2%;
   position: relative;
   margin-bottom: 39px;
-  left: -10%;
+  left: 9%;
   font-size: 4.3rem;
   line-height: 6.7rem;
   -webkit-text-stroke-width: medium;
@@ -370,10 +398,10 @@ body {
 }
 
 .item2-p1 {
-  font-size: 15px;
+font-size: 15px;
   left: 0;
-  margin-left: -9%;
-  margin-top: -19px;
+  margin-left: -1%;
+  margin-top: 7px;
 }
 
 .item2-a1 {
@@ -385,38 +413,41 @@ body {
 }
 
 .item2-span-1 {
-  bottom: auto;
-  top: 2rem;
-  margin: 53% 0 0 5.8%;
-  font-size: 15px;
+    bottom: auto;
+      top: 2rem;
+      margin: 51% 0 0 11.8%;
+      font-size: 15px;
 }
 
 .item2-span-2 {
-  bottom: auto;
+bottom: auto;
   top: 2rem;
-  margin: 58% 0 0 19%;
+  margin: 58% 0 0 28%;
   font-size: 15px;
 }
 
 .item2-span-3 {
-  bottom: auto;
-  top: 2rem;
-  margin: 59.5% 0 0 5.8%;
+bottom: auto;
+  top: 1rem;
+  left: 20px;
+  margin: 58% 0 0px 12%;
   font-size: 15px;
 }
 
 .item2-span-4 {
-  bottom: auto;
-  top: 2rem;
-  margin: 64% 0 0 7%;
+bottom: auto;
+  top: 14rem;
+  margin: 55% 0 0 49%;
   font-size: 15px;
 }
 
+
+
 .item2-span-5 {
-  bottom: auto;
-  top: 2rem;
-  margin: 69.5% 0 0 5.8%;
-  font-size: 15px;
+    bottom: auto;
+      top: 2rem;
+      margin: 69.5% 0 0 12.8%;
+      font-size: 15px;
 }
 
 .item2-span-6 {
@@ -443,10 +474,12 @@ body {
 }
 
 .button-item2 {
-  color: #0efffd;
-  z-index: 1;
-  margin-block: unset;
-  border: double;
+    color: #0efffd;
+      z-index: 1;
+      margin-block: unset;
+      margin: 0px 3px -1px 220%;
+      border: double;
+  
 }
 
 .button-item2:hover {
@@ -461,14 +494,14 @@ body {
 }
 
 .item2-1 {
-  -webkit-writing-mode: horizontal-tb;
-  text-align: start;
-  margin: -18% 0 0 0;
-  font-size: 38vh;
-  color: rgba(255, 255, 255, 0.04);
-  position: absolute;
-  padding: 0px 0 0 38%;
-  font-weight: bolder;
+    -webkit-writing-mode: horizontal-tb;
+      text-align: start;
+      margin: -18% 0 0 135px;
+      font-size: 38vh;
+      color: rgba(255, 255, 255, 0.04);
+      position: absolute;
+      padding: 0px 0 0 38%;
+      font-weight: bolder;
 }
 .item2-2{
   margin: 68% 0 0 85.5%;
@@ -487,16 +520,17 @@ body {
 }
 
 .item3-1 {
-  margin: 94% 0 0 9%;
-  contain: strict;
+contain: strict;
+  right: 690px;
   box-sizing: border-box;
-  width: 1618px;
-  height: 67vh;
+  width: 1617px;
+  height: 74vh;
   background: #1c1d1e;
   display: grid;
   place-items: center;
-  padding: 3rem;
+  padding: 0rem;
   position: relative;
+  top: 146vh;
   overflow: hidden;
 }
 
@@ -510,16 +544,16 @@ body {
 
 .item3-span-1 {
     bottom: auto;
-      top: 2rem;
-      margin: 118.5% 0 0 5.8%;
+      top: 25rem;
+      margin: 118.5% 0 0 8.8%;
       font-size: 15px;
 }
 
 .item3-span-2 {
-    bottom: auto;
-      top: 2rem;
-      margin: 125.3% 0 0 32%;
-      font-size: 15px;
+bottom: auto;
+  top: 26rem;
+  margin: 125.3% 0 0 35%;
+  font-size: 15px;
     
 }
 
@@ -527,27 +561,28 @@ body {
 font-family: font-file-82132;
   color: #08fdd8;
   font-weight: 400;
-  margin-top: 8%;
+  display: grid;
+  margin-top: -20%;
   position: relative;
   margin-bottom: 39px;
-  left: 24vh;
+  left: -45%;
   font-size: 4.3rem;
-  line-height: 6.7rem;
+  line-height: 5.7rem;
   -webkit-text-stroke-width: medium;
 }
 
 .item3-span-3 {
     bottom: auto;
-      top: 13rem;
-      margin: 116.5% 0 0 3.8%;
+      top: 37rem;
+      margin: 117.5% 0 0 1.8%;
       font-size: 15px;
 }
 
 .item3-span-4 {
-bottom: auto;
-  top: 13rem;
-  margin: 142% 0 0 37%;
-  font-size: 15px;
+    bottom: auto;
+      top: -43rem;
+      margin: 141% 0 0 55%;
+      font-size: 15px;
 }
 
 .item3-a1 {
@@ -562,14 +597,18 @@ bottom: auto;
 font-size: 15px;
   text-align: -webkit-center;
   display: inline;
-  margin: 0px 0 0 8%;
+  margin: 28px 0 0 8%;
+  left: 3vh;
   position: absolute;
+
 }
 
 .item3-p2 {
-font-size: 15px;
-  text-align: left;
-  padding: 25vh 0 0 13.8%;
+    position: relative;
+      font-size: 15px;
+      margin-left: 1%;
+      right: 46%;
+      top: 214px;
 }
 
 .itme3-span-5 {
@@ -593,21 +632,20 @@ font-size: 15px;
 }
 
 .item3-3 {
-  -webkit-writing-mode: horizontal-tb;
+-webkit-writing-mode: horizontal-tb;
   text-align: start;
-  margin: -12% 0 0 -28%;
+  margin: 2% 0 0 -44%;
   font-size: 50vh;
   color: rgba(255, 255, 255, 0.04);
-  /* position: absolute; */
-  padding: 0px 0 0 38%;
+  padding: 0px 0 0 5%;
   font-weight: bolder;
 }
 
 .item3-3-1 {
-  width: 743px;
+width: 743px;
   justify-content: center;
   height: 597px;
-  margin-top: -32%;
+  margin-top: -12%;
   left: 114vh;
   position: absolute;
   display: flex;
@@ -646,18 +684,21 @@ font-size: 15px;
 #item3-5 span {
   color: rgb(27, 240, 20);
 }
-
+.item3-6-1{
+  
+}
 #item3-6 {
-  width: 110%;
-  height: 1850px;
-  grid-template-columns: max-content;
-  background-image: url(http://127.0.0.1:5500/css/../img/q.png);
-  contain: strict;
-  display: inline-grid;
-  margin: 22vh -12vh -17vh 15.3vh;
-  overflow-x: hidden;
-  mix-blend-mode: lighten;
-  padding: 0px 0 0 0px;
+    width: 185vh;
+      height: 1847px;
+      grid-template-columns: max-content;
+      background-image: url(http://127.0.0.1:5501/css/../img/q.png);
+      contain: strict;
+      display: inline-grid;
+      margin: 100vh -9vh -17vh 1.3vh;
+      overflow-x: hidden;
+      margin-left: -40%;
+      mix-blend-mode: lighten;
+      padding: 0px 0 0 0px;
 }
 
 .item3-7 {
@@ -682,14 +723,14 @@ font-size: 15px;
 }
 
 .item3-8 {
-  width: 734px;
-  justify-content: center;
-  height: 600px;
-  margin-top: 8%;
-  left: 112vh;
-  position: absolute;
-  display: flex;
-  /* background-color: slateblue; */
+    width: 734px;
+      justify-content: center;
+      height: 600px;
+      margin-top: 83%;
+      margin-left: -5%;
+      right: 0px;
+      position: initial;
+      display: flex;
 }
 
 .item4 {
@@ -1276,7 +1317,7 @@ body {
   margin: 0 10px;
   color: #fff;
   font-size: 1.8rem;
-  backface-visibility: hidden;
+  /* backface-visibility: hidden; */
   transition: all 150ms ease;
 }
 .support a:hover {
@@ -1862,10 +1903,12 @@ code, .card .line-numbers {
 }
 
 .card {
-  position: relative;
-  width: 30rem;
-  height: 12rem;
-  perspective: 150rem;
+    position: relative;
+      width: 30rem;
+      height: 12rem;
+      top: -42%;
+      left: 38%;
+      perspective: 150rem;
 }
 .card-front, .card-back {
   position: absolute;
@@ -1878,7 +1921,7 @@ code, .card .line-numbers {
   border-radius: 5px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   transition: 0.9s cubic-bezier(0.25, 0.8, 0.25, 1);
-  backface-visibility: hidden;
+  /* backface-visibility: hidden; */
   overflow: hidden;
 }
 .card-front:before, .card-front:after, .card-back:before, .card-back:after {
@@ -2900,18 +2943,12 @@ body {
   padding: 0;
 }
 
-/* body {
-  width: 100%;
-  height: 100vh;
-  background: #e2e2e2;
-} */
-
 .menu-btn {
   border: none;
   background: none;
   position: absolute;
-  right: 30px;
-  top: 30px;
+  left: 2px;
+  top: 17px;
   width: 50px;
   height: 20px;
   z-index: 10;
@@ -3040,7 +3077,8 @@ color: #ffffff;
   left: 0;
   height: 2px;
   width: 6%;
-  background: #323131;
+  position: absolute;
+  background: none;
 }
 .nav .nav__inner .nav--transition-slide {
   position: absolute;
@@ -3049,6 +3087,7 @@ color: #ffffff;
   width: 7%;
   height: 100%;
   background: #131313;
+  display:none;
 }
 
 .info {
@@ -3073,7 +3112,7 @@ color: #ffffff;
   margin: 0 10px;
   color: #333333;
   font-size: 1.8rem;
-  backface-visibility: hidden;
+  /* backface-visibility: hidden; */
   transition: all 150ms ease;
 }
 .support a:hover {
@@ -3089,13 +3128,14 @@ color: #ffffff;
 }
 .terminal-window {
     text-align: left;
-      width: 100%;
-      left: -126%;
+      width: 741px;
+      left: -501px;
       height: 33.5rem;
       border-radius: 0.625rem;
       margin: auto;
       position: relative;
-      top: 2.5rem;
+      top: 24.5rem;
+
 }
 
 .terminal-window header {
@@ -3258,7 +3298,9 @@ object-fit: cover;
   overflow: hidden;
 }
 
-.history1-img1 {margin: 0 0 0 0;}
+.history1-img1 {
+  margin: 0 0 0 -34px;
+}
 .history1-text {
   margin: 0 0 0 55px;
   color: #b58ae5;
@@ -3776,4 +3818,34 @@ body {
   height: 0px;
   background-color: #FFF;
 }
-/* -------텍스트---- */
+/* -------메인---- */
+
+.span:hover {
+  transform: scale(2);
+  transition-duration: 0.5s;
+
+}
+/* ------햄버거 */
+#content {
+display: block;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 30%;
+  top: 7px;
+  cursor: pointer;
+}
+
+#content span {
+  display: block;
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 5px;
+  position: absolute;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}

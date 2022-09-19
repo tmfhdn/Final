@@ -1,0 +1,23 @@
+#content {
+display: block;
+  height: 33px;
+  width: 33px;
+  background-color: transparent;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 1%;
+  top: 10.9px;
+  cursor: pointer;
+}
+#content span {
+  display: block;
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 5px;
+  position: absolute;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+

@@ -766,4 +766,4 @@ $('.share').on('click', function(e){
 	$(".float-circle").toggleClass("open");
 });
 
-// -----------텍스트----------
+// -----------화면----------
